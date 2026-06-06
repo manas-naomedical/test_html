@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html data-wf-page="664b46aee94d55504263e68d" data-wf-site="664b46aee94d55504263e670" lang="en" class=" w-mod-js"><head>
+<script data-demo-direct-booking="true">
+(function(){
+  var bookingUrl = "https://book.naomedical.com/womens-health/jackson-heights-queens";
+  var selector = 'a.open-zocdoc-popup,button.open-zocdoc-popup,.book-apt-header,.book-app-btn-2,.zocdocBookAptBtn,#submit-zocdoc-num,a[href*="zocdoc.com"],[data-demo-direct-booking="true"]';
+  function closestBookingTarget(node){
+    if (!node || !node.closest) return null;
+    return node.closest(selector);
+  }
+  function normalizeBookingLinks(){
+    var nodes = document.querySelectorAll(selector);
+    for (var i = 0; i < nodes.length; i += 1) {
+      var el = nodes[i];
+      el.setAttribute('data-demo-direct-booking', 'true');
+      if (el.tagName === 'A' || el.hasAttribute('href')) {
+        el.setAttribute('href', bookingUrl);
+        el.setAttribute('target', '_self');
+        el.setAttribute('rel', 'noopener');
+      }
+    }
+    var popup = document.querySelector('#zocdoc-booking-popup');
+    if (popup) {
+      popup.setAttribute('aria-hidden', 'true');
+      popup.style.setProperty('display', 'none', 'important');
+      popup.style.setProperty('visibility', 'hidden', 'important');
+    }
+  }
+  document.addEventListener('click', function(event){
+    var target = closestBookingTarget(event.target);
+    if (!target) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    window.location.assign(bookingUrl);
+  }, true);
+  document.addEventListener('submit', function(event){
+    var form = event.target;
+    var text = ((form && form.textContent) || '') + ' ' + ((form && form.className) || '') + ' ' + ((form && form.id) || '');
+    if (/zocdoc|book appointment|save your spot/i.test(text)) {
+      event.preventDefault();
+      event.stopPropagation();
+      if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+      window.location.assign(bookingUrl);
+    }
+  }, true);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', normalizeBookingLinks);
+  } else {
+    normalizeBookingLinks();
+  }
+  window.addEventListener('load', normalizeBookingLinks);
+})();
+</script>
+<style data-demo-direct-booking="true">#zocdoc-booking-popup,.zocdoc-book-apt-popup-container,.zocdoc-book-apt-popup-wrapper{display:none!important;visibility:hidden!important;}</style>
+<meta name="robots" content="noindex,nofollow"><style>.ssQIHO-checkbox-menu-item>span>span{background-color:#000;display:inline-block}@media (forced-colors:active),(prefers-contrast:more){.ssQIHO-checkbox-menu-item>span>span{background-color:ButtonText}}
+</style><style>.gm-style .gm-style-mtc div,.gm-style .gm-style-mtc label{font-weight:400}.gm-style .gm-style-mtc li,.gm-style .gm-style-mtc ul{-webkit-box-sizing:border-box;box-sizing:border-box}.gm-style-mtc-bbw{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap}.gm-style-mtc-bbw .gm-style-mtc:first-of-type>button{border-start-start-radius:2px;border-end-start-radius:2px}.gm-style-mtc-bbw .gm-style-mtc:last-of-type>button{border-start-end-radius:2px;border-end-end-radius:2px}sentinel{}
+</style><style>.LGLeeN-keyboard-shortcuts-view{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.LGLeeN-keyboard-shortcuts-view table,.LGLeeN-keyboard-shortcuts-view tbody,.LGLeeN-keyboard-shortcuts-view td,.LGLeeN-keyboard-shortcuts-view tr{background:inherit;border:none;margin:0;padding:0}.LGLeeN-keyboard-shortcuts-view table{display:table}.LGLeeN-keyboard-shortcuts-view tr{display:table-row}.LGLeeN-keyboard-shortcuts-view td{-moz-box-sizing:border-box;box-sizing:border-box;display:table-cell;color:light-dark(#000,#fff);padding:6px;vertical-align:middle;white-space:nowrap}.LGLeeN-keyboard-shortcuts-view td:first-child{text-align:end}.LGLeeN-keyboard-shortcuts-view td kbd{background-color:light-dark(#e8eaed,#3c4043);border-radius:2px;border:none;-moz-box-sizing:border-box;box-sizing:border-box;color:inherit;display:inline-block;font-family:Google Sans Text,Roboto,Arial,sans-serif;line-height:16px;margin:0 2px;min-height:20px;min-width:20px;padding:2px 4px;position:relative;text-align:center}
+</style><style>.gm-control-active>img{-webkit-box-sizing:content-box;box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.gm-control-active>img:first-child{display:block}.gm-control-active:active>img:first-child,.gm-control-active:disabled>img:first-child,.gm-control-active:focus>img:first-child,.gm-control-active:hover>img:first-child{display:none}.gm-control-active:focus>img:nth-child(2),.gm-control-active:hover>img:nth-child(2){display:block}.gm-control-active:active>img:nth-child(3){display:block}.gm-control-active:disabled>img:nth-child(4){display:block}sentinel{}
+</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400,500,700&amp;amp;lang=en"><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93&amp;amp;lang=en"><style>.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span,.gm-style .gm-style-mtc div{font-size:10px;-webkit-box-sizing:border-box;box-sizing:border-box}.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span{outline-offset:3px}sentinel{}
+</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-moc{background-color:rgba(0,0,0,.59);pointer-events:none;text-align:center;-webkit-transition:opacity ease-in-out;transition:opacity ease-in-out}.gm-style-mot{color:white;font-family:Roboto,Arial,sans-serif;font-size:22px;margin:0;position:relative;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)}sentinel{}
+</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
+<meta charset="utf-8">
+<title>Walk-In GYN Care in Jackson Heights, Queens | Women's Health, Pap Smears | Nao Medical</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Book walk-in GYN care and women's health visits for Jackson Heights, Queens patients with Nao Medical. Pap smears, pelvic exams, birth control visits, STI testing, vaginitis and UTI evaluation, and same-day scheduling.">
+<link href="https://naomedical.com/womens-health/css/normalize.min.css" rel="stylesheet" type="text/css">
+<link href="https://naomedical.com/womens-health/css/webflow.min.css" rel="stylesheet" type="text/css">
+<link href="https://naomedical.com/womens-health/css/astoria-location-page.webflow.css" rel="stylesheet" type="text/css">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Walk-In GYN Care in Jackson Heights, Queens | Women's Health, Pap Smears | Nao Medical">
+<meta property="og:description" content="Nao Medical serves Jackson Heights, Queens patients with women's health and GYN care, including Pap smears, pelvic exams, birth control, STI testing, and insurance-friendly scheduling.">
+<meta property="og:site_name" content="Nao Medical">
+<meta property="article:modified_time" content="2026-06-03T12:00:00+00:00">
+<meta property="og:image" content="https://naomedical.com/services/womens-health/images/banner-img.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@NaoMedical">
+<meta name="twitter:title" content="Walk-In GYN Care in Jackson Heights, Queens | Women's Health, Pap Smears | Nao Medical">
+<meta name="twitter:description" content="Nao Medical serves Jackson Heights, Queens patients with women's health and GYN care, including Pap smears, pelvic exams, birth control, STI testing, and insurance-friendly scheduling.">
+<meta name="twitter:image" content="https://naomedical.com/services/womens-health/images/banner-img.webp">
+
+<script async="" src="https://www.clarity.ms/tag/uet/187095439"></script><script async="" src="https://scripts.clarity.ms/0.8.65/clarity.js"></script><script async="" src="https://www.gstatic.com/call-tracking/call-tracking_9.js" nonce="null"></script><script async="" src="https://www.clarity.ms/tag/lpv7pdx2er?ref=gtm2"></script><script type="text/javascript" async="" src="https://www.gstatic.com/wcm/loader.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=COAN83RC77UFSP5UU5JG"></script><script src="https://connect.facebook.net/signals/config/1142684283409545?v=2.9.334&amp;amp;r=stable&amp;amp;domain=naomedical.com&amp;amp;hme=d9eb83ce5750216745fae8e2064a8c1ed2255ecaf2468f800b2a146e6168b65e&amp;amp;ex_m=105%2C208%2C156%2C22%2C73%2C74%2C147%2C69%2C68%2C11%2C165%2C91%2C16%2C139%2C128%2C39%2C76%2C79%2C135%2C161%2C167%2C8%2C4%2C5%2C7%2C6%2C3%2C92%2C102%2C168%2C173%2C222%2C62%2C189%2C190%2C55%2C280%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C104%2C61%2C10%2C64%2C98%2C99%2C100%2C106%2C131%2C31%2C29%2C133%2C134%2C130%2C129%2C157%2C77%2C160%2C158%2C159%2C50%2C60%2C124%2C15%2C164%2C45%2C267%2C268%2C266%2C26%2C27%2C28%2C48%2C148%2C78%2C113%2C18%2C20%2C44%2C40%2C42%2C41%2C84%2C93%2C97%2C111%2C146%2C149%2C46%2C112%2C24%2C21%2C120%2C70%2C36%2C151%2C150%2C152%2C143%2C141%2C25%2C35%2C59%2C110%2C163%2C71%2C17%2C154%2C115%2C82%2C67%2C19%2C86%2C87%2C117%2C85%2C137%2C136%2C140%2C162%2C34%2C282%2C298%2C215%2C204%2C205%2C203%2C301%2C292%2C52%2C216%2C108%2C132%2C81%2C122%2C54%2C47%2C49%2C114%2C121%2C127%2C126%2C58%2C65%2C63%2C153%2C116%2C37%2C32%2C53%2C56%2C101%2C166%2C1%2C125%2C14%2C123%2C12%2C2%2C57%2C94%2C66%2C119%2C90%2C89%2C169%2C170%2C95%2C96%2C9%2C103%2C51%2C144%2C88%2C80%2C72%2C118%2C107%2C43%2C145%2C0%2C83%2C138%2C142%2C155%2C38%2C109%2C13%2C171" async=""></script><script type="text/javascript" async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-1D4MFSR4DC&amp;amp;cx=c&amp;amp;gtm=4e6631"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1026827988&amp;amp;cx=c&amp;amp;gtm=4e6631"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KRJXFR7L"></script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Nao Medical Women's Health Clinic - Jackson Heights",
+  "image": "https://naomedical.com/services/womens-health/images/banner-img.webp",
+  "@id": "https://naomedical.com/womens-health/locations/jackson-heights.html",
+  "url": "https://naomedical.com/womens-health/locations/jackson-heights.html",
+  "telephone": "+1 917-310-3371",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "80-10 Northern Blvd",
+    "addressLocality": "Jackson Heights",
+    "addressRegion": "NY",
+    "postalCode": "11372",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.7558677,
+    "longitude": -73.8842043
+  },
+  "description": "Nao Medical offers women's health and walk-in GYN care for Jackson Heights, Queens patients, including Pap smears, pelvic exams, birth control consults, STI testing, and follow-up care across NYC and Long Island.",
+  "sameAs": [
+    "https://www.facebook.com/naomedical",
+    "https://www.instagram.com/naomedical"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Women's health and walk-in GYN care for Jackson Heights, Queens",
+  "serviceType": "Women's health and gynecology care",
+  "provider": {
+    "@type": "MedicalBusiness",
+    "name": "Nao Medical",
+    "url": "https://naomedical.com/"
+  },
+  "areaServed": "Jackson Heights, Queens",
+  "url": "https://naomedical.com/womens-health/locations/jackson-heights.html",
+  "description": "Nao Medical offers women's health and walk-in GYN care for Jackson Heights, Queens patients, including Pap smears, pelvic exams, birth control consults, STI testing, and follow-up care across NYC and Long Island."
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are women's health visits for Jackson Heights, Queens patients walk-in or appointment-based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Patients in Jackson Heights, Queens can book online, call the team, and in many cases use same-day or walk-in women's-health availability when schedules allow. Booking ahead is still the best way to reserve the right visit type."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What GYN and women's-health services can start here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nao Medical supports Pap smears, pelvic exams, birth control visits, STI testing, vaginitis and discharge concerns, UTI-related symptoms, wellness visits, and other common women's-health needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept Medicaid, Medicare, and major insurance plans for women's health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nao Medical works with many major insurance plans, including Medicaid, Medicare, 1199, Healthfirst, MetroPlus, Fidelis Care, UnitedHealthcare, Aetna, Cigna, EmblemHealth, and Blue Cross Blue Shield."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Jackson Heights, Queens patients get a Pap smear or birth control visit here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many patients use Nao Medical for Pap smears, pelvic exams, contraceptive counseling, birth control refills, and related women's-health follow-up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this the right page for severe pelvic pain, heavy bleeding, or an emergency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. If you have severe pain, heavy bleeding, fainting, or another emergency, go to the nearest emergency room or call 911. Nao Medical is for scheduled and walk-in women's-health care, not emergency obstetric or surgical care."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://naomedical.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Women's Health",
+      "item": "https://naomedical.com/services/womens-health/womens-health-clinic-near-me-expert-women-wellness-care.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Jackson Heights",
+      "item": "https://naomedical.com/womens-health/locations/jackson-heights.html"
+    }
+  ]
+}
+</script>
+<script type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+<link href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-codex-favicon-badge%3D%22codex-favicon-badge%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cimage%20href%3D%22data%3Aimage%2Fbmp%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHOklEQVR4nJRXW2xc1RXd55x7Z%2FyeGEL6oqgpTYXqlqI6nmncViUJaj8aIdTUVT9atV%2F8FGxLKa2qtmRUKvUpBKTiA1EJ9Ytq%2BoMIEAUTyEuKHRxEBCaIEEJkAhEJyR0ztu%2FjnMPa596xZ8ZPjmTPfeyz99prv871aD2r%2F%2B6ObtXZL6TYKcj%2BUBB9U8fxt2Ym%2F30Gb3FLdg0NK8pIWnsjdUrvq1KKI1Kqvbj9NqlcO3liMBUZWkXHkMouMuNl%2BWkBuI212odTZJN3rdXaWjOPx1aS%2FEEqUlnF%2B4omut3r2Va%2BLgNg6k6tF0AqM1WJrKVjQnoSu6U1CSsZpK%2Fcm8evWWaPM1IojvyusK1%2FSlD1TGHbnhM9xXt%2FlDklPgWAIScMn8ewT1jebIwhob7Y0StvbTTYoNP2FIf3ynzX33C5BfI3CCFK0svv7xwY3pmBkLQ%2BABXnYWT0UavDGJY87E6E8q0SdnsGslGPoVt%2Bfb0Qco9JZrU1OmH4xsQhcFpweH8mZ9cJIBUMJ%2Fedg543hPRBAwJiDSEeOxtB1vV1dMmbQFY3Gc0hc4korPABhq82E93ttwJYCwgrgVl7mKSyFnymeSAG6LZfbaDFEnNAxPzcRYCcQ5g0XhghWMBqIZWBlstEjyXUYjjzgMvElY5YjgVrxBj%2FE26f0QhDb6fqLrbokrXXHr9kLD0u%2FU6PGWDCBFMnPQVFD1FDDnhssLP42a%2FX5vNn6XS51my3Xsdpqc1E4YmCRx9DWxdoiIRQUCk4DAfTZK3UnRFVPbtnQwyqhPcLS6YbbFxKwtl%2FzZx8%2BL%2BZgylbbcV7NueFdwaSH4KmYwD2gomjo1mXawHTZ3tKVw9LlfuOTaJIeH7e6mQiGH%2BoRCusztLIZ3KybdPV6OoFmnwsoJauKLqLw79UKvcEmgyBJa40RCtKIPK6FXQYkmPGmona%2BMOXeEN3ceQ%2B5bf%2FwyTzETT5yK4wmjVb5k7vm6YlLZdDWjYr32NDoTTyJFrrbtJRjFsFFZy5HknP3XK2Wx1fw9NTpM0BhDMUnvcgpwAnGNjwbBz%2BLDh58f%2FkkrUSN4NgUGX%2Bs7TMPGArg4ilRyrvwRLsJZzlMekEwih7BiTkBhLeDuHLHdbEToajax1twCHsHTD8P%2BjTi0a5N%2FTZ1OPyiu1a5W8s7ofCCXj2MRzqgtfXCZVTMKoQDKYAqeGQYQ5o0GFkZty6asArxO7L%2BRsHN%2BW%2FsM3zN229Fn0wgWSegtGXbEP%2BANDUEgDN5fa1cq7QFXB73Q7VO2B8AHlxPQyQM8SNxBquqYV9DgjmNMKYhsskH5EVJ0mYQ1arF6tXo9N0dl%2FYbDZNaGZGLNLFq6Ibxbr792wUPg2A2TsQi9th4Ut43MukLHiQsYELRgdkUqX5w%2BTEjPAcpI%2Fj1ZjQ8fFgct%2FbKzPgFmfq6yKr%2FaaMLZRGn0S6%2FBTtXafhoWYgnANo%2B9x4ibPHWg%2FNRzhArhdGzMRpgHkJYih3c2oZANQCcAi1WYlg%2FJ%2FofL%2BxJoIRBEgIbqsuHxZCoTAnUDnWhYsrmRJ%2BsYBwSXVF76jV7XOsKkmhOPp34bfdB%2BOslUvVIDc4SUG%2Fsc5j6eFSl2H4FO47sXmjQGUhl5UbSNYN8gSjGRMyiQlHLGAb99Ywrgul4b8KL%2F9bm8xzQFkeQwUlq6PjILUPsS5AdyKln0OJVoPxRx6AjOzeOrJFUvg9WEWrtoMAchNASvYcezldcGH3i9WM9xRH%2FyL9tj%2FUjTOl0mvzTRI%2BU72idxc2qiOIcdEmMZpTLgdKjwbjvduXNB0%2B1Mqu25Ce28HEDjCxFcB6cLzoEysaLw3%2FWXrtf7JJ2GQcRp4NLp%2F5MZ19LsSp50Hpt48CEI%2BdHLyrBsnczej5l8lNOx5Q9Wa0uDr6Rz%2FnC90XvBwebskBroBHDTwvw%2FP7lzF%2BIKhO30VvPsXtlvKfL3G%2F%2BrlrgBh5aGDtOVJHwvdOvEUugafMYjNi3Te4ZhS%2Ff2ImvDhxjmjSNB5EuF%2BbnoGRP0o%2Fv3ep8fB5eH4XH1ApK99qrTYBUNeITylcskJmbdkx2cIus%2BD6THYoLTedCd1BEgn3e5XveACURi2ejwUfXLuTaafFWS5o6j8f4edl5IF1xzQMKNTD91OVzU2tZS2ERS4%2BcKX5CowF4DUHfZEznkQvBtPTd9L5J%2BapadzWu6c55LpeekwDA7Kv7dZ7Ni%2ByuvpqBCCqJx85oKO5XegYVZnrwmEDxpPaLpquzNGSWZ%2BekmwiDqH8%2BBQBxnDn%2Bblcu%2FfdZpBrA8hADKmZyUePxXH4E9Tq08GFs7uQ0bO0%2FLedo7B6JXgV1L%2BH7ibd2ZObEtXzoLLWN%2BOyFElqngGrfXw6WeRORXhtu5E7IarCJ63PBxO9tyDOCa2xlqOo%2Fv1WB7eKF2mmGyMOUjqj2zALFJrSzR1br3yjwYEV10qteE3q0pV%2BkGDsHrNa4nSkLiARD%2BHRwdkwOb8eXZ8AAAD%2F%2F6EhzbYAAAAGSURBVAMAa2CbMz%2F34osAAAAASUVORK5CYII%3D%22%20width%3D%2232%22%20height%3D%2232%22%20opacity%3D%220.3%22%20%2F%3E%3Cpath%20d%3D%22M3.04536%204.45259C2.7582%203.60299%203.60299%202.7582%204.45259%203.04536L14.1828%206.33403C15.1637%206.66558%2015.0872%208.08006%2014.0715%208.39045L10.2994%209.54319C9.93919%209.65327%209.65327%209.93919%209.54319%2010.2994L8.39046%2014.0715C8.08007%2015.0872%206.66558%2015.1637%206.33404%2014.1828L3.04536%204.45259Z%22%20fill%3D%22black%22%20stroke%3D%22white%22%20stroke-width%3D%221.5%22%20stroke-linejoin%3D%22round%22%20paint-order%3D%22stroke%20fill%22%20transform%3D%22translate(-2%20-2)%20scale(2.1)%22%20%2F%3E%3C%2Fsvg%3E" rel="shortcut icon" type="image/x-icon" data-codex-favicon-badge="true" data-codex-original-favicon-href="https://naomedical.com/womens-health/images/favicon.png">
+<link href="https://naomedical.com/womens-health/images/webclip.png" rel="apple-touch-icon">
+<script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=664b46aee94d55504263e670" type="text/javascript"></script>
+<script src="https://naomedical.com/womens-health/js/load-reviews.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KRJXFR7L');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1D4MFSR4DC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-1D4MFSR4DC');
+  </script>
+<style>
+    @media screen and (max-width: 400px) {
+      .review-wrapper {
+        height: 780px;
+      }
+
+      .review-wrapper.active {
+        height: 1790px;
+      }
+    }
+  </style>
+<link href="https://naomedical.com/womens-health/css/fonts.css" rel="stylesheet" type="text/css">
+
+  <link rel="canonical" href="https://naomedical.com/womens-health/locations/jackson-heights.html">
+  <meta property="og:url" content="https://naomedical.com/womens-health/locations/jackson-heights.html">
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/3b/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/3b/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/3b/log.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/3b/onion.js"></script><script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/65/3b/infowindow.js" nonce="null"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1026827988/?random=1780749872169&amp;cv=11&amp;fst=1780749872169&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be6631v9173958978z89174556438za20gzb9174556438zd9174556438xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616985~115938466~115938469~118228214~119027222&amp;u_w=1470&amp;u_h=956&amp;url=https%3A%2F%2Fnaomedical.com%2Fwomens-health%2Flocations%2Fjackson-heights.html&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;rcb=0&amp;frm=0&amp;tiba=Walk-In%20GYN%20Care%20in%20Jackson%20Heights%2C%20Queens%20%7C%20Women's%20Health%2C%20Pap%20Smears%20%7C%20Nao%20Medical&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=373643778.1776684633&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B149.0.7827.53%7CChromium%3B149.0.7827.53%7CNot)A%253BBrand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=26.5.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;gap.plf=5&amp;ept=9&amp;rfmt=3&amp;fmt=4" nonce="null"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1026827988/?random=1780749872177&amp;cv=11&amp;fst=1780749872177&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be6631v9173958978z89174556438za20gzb9174556438zd9174556438xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=0~115616985~115938466~115938469~118228214~119027222&amp;u_w=1470&amp;u_h=956&amp;url=https%3A%2F%2Fnaomedical.com%2Fwomens-health%2Flocations%2Fjackson-heights.html&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;rcb=0&amp;frm=0&amp;tiba=Walk-In%20GYN%20Care%20in%20Jackson%20Heights%2C%20Queens%20%7C%20Women's%20Health%2C%20Pap%20Smears%20%7C%20Nao%20Medical&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=373643778.1776684633&amp;uaa=arm&amp;uab=64&amp;uafvl=Google%2520Chrome%3B149.0.7827.53%7CChromium%3B149.0.7827.53%7CNot)A%253BBrand%3B24.0.0.0&amp;uamb=0&amp;uam=&amp;uap=macOS&amp;uapv=26.5.0&amp;uaw=0&amp;_tu=CA&amp;gap.plf=5&amp;ept=9&amp;rfmt=3&amp;fmt=4" nonce="null"></script><script src="https://bat.bing.com/p/action/187095439.js" type="text/javascript" async="" data-ueto="ueto_0bf677dfe9"></script></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-KRJXFR7L" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="navbar-2 w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
+<div class="container-2 w-container">
+<a class="brand w-nav-brand" href="https://naomedical.com/"><img alt="" class="nao-medical-logo-2" height="46" sizes="(max-width: 479px) 132.2375030517578px, (max-width: 767px) 28vw, (max-width: 991px) 100vw, 1388.237548828125px" src="https://naomedical.com/womens-health/images/naoMedicalLogo.svg" srcset="https://naomedical.com/womens-health/images/naoMedicalLogo.svg 500w, https://naomedical.com/womens-health/images/naoMedicalLogo.svg 676w" width="190"></a>
+<a class="book-app-btn-2 book-apt-header" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">
+<div class="text-19">Book an Appointment</div>
+</a>
+</div>
+<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div></div>
+<div class="slider w-slider" data-animation="slide" data-autoplay="true" data-autoplay-limit="0" data-delay="4000" data-disable-swipe="false" data-duration="1000" data-easing="ease" data-hide-arrows="true" data-infinite="true" data-nav-spacing="3" role="region" aria-label="carousel">
+<div class="mask-2 w-slider-mask" id="w-slider-mask-0"><div class="slide w-slide jackson" loading="lazy" aria-label="1 of 1" role="group" style="transition: all; transform: translateX(0px); opacity: 1;"></div><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div>
+<div class="w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="previous slide" style="display: none;">
+<div class="w-icon-slider-left"></div>
+</div>
+</div>
+<div class="frame-1000005004">
+<div class="frame-1000005003">
+<div class="text-20"><h2>Women's Health in Jackson Heights</h2></div>
+<div class="frame-1000005001"><img alt="" class="vectors-wrapper-34" height="16.23382568359375" loading="lazy" src="https://naomedical.com/womens-health/images/Vectors-Wrapper.svg" width="18">
+<div class="frame-1000005000">
+<div class="open-now-2">Now Scheduling
+          </div>
+<div class="frame-1000004999"><img alt="" class="vectors-wrapper-35" height="3" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="3">
+<div class="book-now-be-seen-in-minutes-2">Walk-in GYN care and same-day women's-health visits</div>
+</div>
+</div>
+</div>
+</div>
+<a class="button-3 w-button open-zocdoc-popup" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">Book
+      an appointment</a>
+<div class="w-layout-blockcontainer container-9 w-container">
+<div class="text-21">Details</div>
+<div class="frame-1000004996"><img alt="" class="vectors-wrapper-38" height="19" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_2.svg" width="18">
+<div class="frame-1000004995">
+<div class="_37-15-23rd-ave-astoria-ny-11106"><h2>80-10 Northern Blvd, Jackson Heights, NY 11372</h2>
+</div>
+<a class="frame-1000004994" href="https://www.google.com/maps/search/?api=1&amp;amp;query=80-10+Northern+Blvd%2C+Jackson+Heights%2C+NY+11372"><img alt="" class="vectors-wrapper-39" height="3" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" target="_blank" width="3">
+<div class="get-directions-3">Get Directions
+            </div>
+</a>
+</div>
+</div>
+<div class="frame-1000004993"><img alt="" class="vectors-wrapper-40" height="18" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_4.svg" width="18">
+<div class="frame-1000004992">
+<div class="estimated-wait-2">Availability
+          </div>
+<div class="frame-1000004991"><img alt="" class="vectors-wrapper-41" height="3" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="3">
+<div class="text-22">Same-day or next-available visits may be available</div>
+</div>
+</div>
+</div>
+<div class="frame-1000004990"><img alt="" class="vectors-wrapper-42" height="18" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_5.svg" width="18">
+<div class="frame-1000004989">
+<div class="text-23"><a class="link-2" href="tel:(917) 310-3371">(917) 310-3371</a></div>
+<div class="frame-1000004988"><img alt="" class="vectors-wrapper-43" height="3" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="3">
+<div class="call-2"><a class="link-2" href="tel:(917) 310-3371">Call </a></div>
+</div>
+</div>
+</div>
+<div class="frame-1000004984"><img alt="" class="vectors-wrapper-44" height="20" loading="lazy" src="https://naomedical.com/womens-health/images/MONEY.svg" width="18">
+<div class="frame-1000004983">
+<div class="text-24">We accept all major insurance plans!</div>
+<div class="frame-1000004982"><img alt="" class="vectors-wrapper-45" height="3" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="3">
+<div class="text-25">Self-pay options may be available.</div>
+</div>
+</div>
+</div>
+<div class="frame-1000005021"><img alt="" class="vectors-wrapper-49" height="20" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_6.svg" width="18">
+<div class="frame-1000005022">
+<div class="text-36">Location hours available</div>
+<div class="frame-1000005023"><img alt="" class="vectors-wrapper-45" height="3" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="3">
+<div class="text-37">See location hours</div><img alt="" class="vectors-wrapper-50" height="3" src="https://naomedical.com/womens-health/images/arrow-down.svg" width="6">
+</div>
+</div>
+</div>
+<div class="div-block-14">
+<div class="frame-1000005008">
+<table border="0">
+<tbody><tr data-day="Monday">
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Monday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                8:30
+                am to 8:30 pm</td>
+</tr>
+<tr data-day="Tuesday">
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Tuesday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                8:30
+                am to 8:30 pm</td>
+</tr>
+<tr data-day="Wednesday">
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Wednesday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                8:30
+                am to 8:30 pm</td>
+</tr>
+<tr data-day="Thursday">
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Thursday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                8:30
+                am to 8:30 pm</td>
+</tr>
+<tr data-day="Friday">
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Friday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                8:30
+                am to 8:30 pm</td>
+</tr>
+<tr data-day="Saturday">
+<td style="color: rgb(30, 53, 101); margin-top: 0px; margin-bottom: 0px; font-size: 16px; font-weight: 700; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Saturday</td>
+<td style="color: rgb(0, 0, 0); text-align: center; margin-top: 0px; margin-bottom: 0px; font-size: 16px; font-weight: 700; line-height: 100%; text-decoration: none;">
+                9:00
+                am to 5:00 pm</td>
+</tr>
+<tr data-day="Sunday">
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Sunday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                9:00
+                am to 5:00 pm</td>
+</tr>
+<tr>
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                Holiday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                9:00
+                am to 3:00 pm</td>
+</tr>
+</tbody></table>
+</div>
+<div class="frame-1000005014">
+<div class="frame-1000005014">
+<div class="text-30">After Hours Service</div>
+<table border="0">
+<tbody><tr>
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                  Monday
+                  - Friday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                  9:00
+                  pm to 12:00 am</td>
+</tr>
+<tr>
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                  Saturday
+                  - Sunday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                  5:00
+                  pm to 11:00 pm</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="frame-1000005018">
+<div class="frame-1000005018">
+<div class="text-33">Virtual Care Available</div>
+<table border="0">
+<tbody><tr>
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                  Monday
+                  - Friday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                  9:00
+                  am to 9:00 pm</td>
+</tr>
+<tr>
+<td style="color: #1e3565; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 500; line-height: 100%; text-decoration: none; font-family: Todaysansnowpro, sans-serif;">
+                  Saturday
+                  - Sunday</td>
+<td style="color: #000; text-align: center; margin-top: 0; margin-bottom: 0; font-size: 16px; font-weight: 400; line-height: 100%; text-decoration: none;">
+                  9:00
+                  am to 5:00 pm</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="section">
+<div class="frame-1000004936">
+<a class="button-2 w-button open-zocdoc-popup" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">Book
+        an appointment</a>
+<div class="frame-1000004918">
+<div class="text"><h2>Women's Health in Jackson Heights</h2></div>
+<div class="frame-1000004917"><img alt="" class="vectors-wrapper" height="17.3260498046875" loading="lazy" src="https://naomedical.com/womens-health/images/Vectors-Wrapper.svg" width="19.211050033569336">
+<div class="frame-1000004916">
+<div class="open-now">Now Scheduling
+            </div>
+<div class="frame-1000004915"><img alt="" class="vectors-wrapper-5" height="4" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_1.svg" width="4">
+<div class="book-now-be-seen-in-minutes">Walk-in GYN care and same-day women's-health visits</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-layout-blockcontainer container-8 w-container">
+<div class="text-5">Details</div>
+<div class="div-block-13">
+<div class="frame-1000004933"><img alt="" class="vectors-wrapper-8" height="20" loading="lazy" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_2.svg" width="20">
+<div class="frame-1000004920">
+<div class="_37-15-23rd-ave-astoria-ny-11105"><h2>80-10 Northern Blvd, Jackson Heights, NY 11372</h2></div>
+<div class="frame-1000004919"><img alt="" class="vectors-wrapper-9" height="4" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="4">
+<div class="get-directions">
+<a class="link" href="https://www.google.com/maps/search/?api=1&amp;amp;query=80-10+Northern+Blvd%2C+Jackson+Heights%2C+NY+11372" target="_blank">Get Directions</a>
+</div>
+</div>
+</div>
+</div>
+<div class="frame-1000004932"><img alt="" class="vectors-wrapper-8" height="20" loading="lazy" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_4.svg" width="20">
+<div class="frame-1000004922">
+<div class="estimated-wait">Availability
+            </div>
+<div class="frame-1000004921"><img alt="" class="vectors-wrapper-10" height="4" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="4">
+<div class="text-6">Same-day or next-available visits may be available</div>
+</div>
+</div>
+</div>
+<div class="frame-1000004932"><img alt="" class="vectors-wrapper-11" height="20" loading="lazy" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_5.svg" width="20">
+<div class="frame-1000004924">
+<div class="text-7"><a class="link-2" href="tel:(917) 310-3371">(917) 310-3371</a></div>
+<div class="frame-1000004923"><img alt="" class="vectors-wrapper-10" height="4" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="4">
+<div class="call">
+<a class="link-2" href="tel:(917) 310-3371">Call </a>
+</div>
+</div>
+</div>
+</div>
+<div class="frame-1000004932"><img alt="" class="vectors-wrapper-8" height="20" loading="lazy" src="https://naomedical.com/womens-health/images/MONEY.svg" width="20">
+<div class="frame-1000004922">
+<div class="estimated-wait"><h2>Nao Medical accepts all major insurance
+              plans!</h2></div>
+<div class="frame-1000004921"><img alt="" class="vectors-wrapper-10" height="4" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="4">
+<div class="text-6">Self-pay options may be available.</div>
+</div>
+</div>
+</div>
+<div class="frame-1000004932 no-margin"><img alt="" class="vectors-wrapper-12" height="20" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_6.svg" width="20">
+<div class="frame-1000004928">
+<div class="text-8">Location hours available</div>
+<div class="frame-1000004927"><img alt="" class="vectors-wrapper-10" height="4" src="https://naomedical.com/womens-health/images/Vectors-Wrapper_3.svg" width="4">
+<div class="text-9">See location hours</div><img alt="" class="vectors-wrapper-13" height="4" src="https://naomedical.com/womens-health/images/arrow-down.svg" width="8">
+</div>
+</div>
+</div>
+<div class="frame-1000004946">
+<table border="0">
+<tbody><tr data-day="Monday">
+<td>Monday</td>
+<td>8:30 am to 8:30 pm</td>
+</tr>
+<tr data-day="Tuesday">
+<td>Tuesday</td>
+<td>8:30 am to 8:30 pm</td>
+</tr>
+<tr data-day="Wednesday">
+<td>Wednesday</td>
+<td>8:30 am to 8:30 pm</td>
+</tr>
+<tr data-day="Thursday">
+<td>Thursday</td>
+<td>8:30 am to 8:30 pm</td>
+</tr>
+<tr data-day="Friday">
+<td>Friday</td>
+<td>8:30 am to 8:30 pm</td>
+</tr>
+<tr data-day="Saturday">
+<td style="font-weight: 700;">Saturday</td>
+<td style="font-weight: 700;">9:00 am to 5:00 pm</td>
+</tr>
+<tr data-day="Sunday">
+<td>Sunday</td>
+<td>9:00 am to 5:00 pm</td>
+</tr>
+<tr>
+<td>Holiday</td>
+<td>9:00 am to 3:00 pm</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</section>
+<div class="frame-1000004913"><img alt="" class="_2149329018-1" height="138" src="https://naomedical.com/womens-health/images/pointer-bg.webp" width="1440">
+<div class="frame-1000004912">
+<div class="frame-1000004911">
+<div class="frame-1000004826">
+<div class="text-10">Same-day visits</div>
+<div class="text-11">Insurance-friendly care</div>
+</div>
+<wrapper class="vectors-wrapper-14"></wrapper>
+<div class="frame-1000004826">
+<div class="text-10">2 Million+
+          </div>
+<div class="text-11">Patients served
+          </div>
+</div>
+<wrapper class="vectors-wrapper-14"></wrapper>
+<div class="frame-1000004826">
+<div class="text-10">200,000+
+          </div>
+<div class="text-11">5-star Reviews
+          </div>
+</div>
+<wrapper class="vectors-wrapper-14"></wrapper>
+<div class="frame-1000004826">
+<div class="text-10">12+</div>
+<div class="text-11">Years in operation</div>
+</div>
+<wrapper class="vectors-wrapper-14"></wrapper>
+<div class="frame-1000004826">
+<div class="text-10">300+
+          </div>
+<div class="text-11">Team members and growing</div>
+</div>
+<wrapper class="vectors-wrapper-14"></wrapper>
+<div class="frame-1000004826">
+<div class="text-10">Online booking</div>
+<div class="text-11">Walk-in and scheduled care across NYC and Long Island.</div>
+</div>
+</div>
+</div>
+</div>
+<section class="section-2">
+<div class="frame-1000005037">
+<div class="frame-1000005038">
+<div class="div-block-15">
+<div class="text-block-10">2 Million+</div>
+<div class="text-block-12">Patients served</div>
+</div>
+<div class="div-block-15">
+<div class="text-block-10">12+</div>
+<div class="text-block-13">Years in operation</div>
+</div>
+<div class="div-block-15">
+<div class="text-block-10">200,000+</div>
+<div class="text-block-14">5-star Reviews</div>
+</div>
+</div>
+<div class="frame-1000005039">
+<div class="div-block-15 no-border">
+<div class="text-block-10">Same-day visits</div>
+<div class="text-block-11">Insurance-friendly care</div>
+</div>
+<div class="div-block-15 no-border">
+<div class="text-block-10">300+</div>
+<div class="text-block-11">Team members and growing</div>
+</div>
+<div class="div-block-15 no-border">
+<div class="text-block-10">Online booking</div>
+<div class="text-block-11">Walk-in and scheduled care across NYC and Long Island.</div>
+</div>
+</div>
+</div>
+</section>
+<div class="insurance-wrapper">
+<h2>Women's Health Insurance Coverage</h2>
+<div class="subtext-container">
+<p>Patients regularly use these plans across Nao Medical, and the team can help verify likely women's-health coverage before you start.</p>
+<p>Nao Medical works with many major health insurance plans for women's health, including <b>Medicaid, Medicare, 1199, managed Medicaid, Medicare Advantage, and major commercial and exchange plans.</b></p>
+<div class="insurance-container">
+<img alt="Aetna" src="https://naomedical.com/womens-health/images/aetna.svg">
+<img alt="Health first" src="https://naomedical.com/womens-health/images/healthfirst.svg">
+<img alt="Metroplus" src="https://naomedical.com/womens-health/images/metroplus.svg">
+<img alt="Fidelis" src="https://naomedical.com/womens-health/images/fidelis.svg">
+<img alt="United Healthcare" src="https://naomedical.com/womens-health/images/United-Healthcare.svg">
+<img alt="Blue Cross Blue Shield" src="https://naomedical.com/womens-health/images/BlueCrossBlueShield.svg">
+</div>
+<p style="text-align: right;"><span class="green-text">200+</span> Other In-Network Plans</p>
+</div>
+</div>
+<div class="frame-1000004858">
+<div class="frame-1000004902">
+<div class="frame-1000004892">
+<div class="astoria-queens-ny"><h3>Jackson Heights, Queens, NY</h3>
+</div>
+<div class="map-header-sub-container">
+<a class="frame-1000004891" href="https://www.google.com/maps/search/?api=1&amp;amp;query=80-10+Northern+Blvd%2C+Jackson+Heights%2C+NY+11372" target="_blank">
+<img alt="" class="vectors-wrapper-28" height="24" src="https://uploads-ssl.webflow.com/664b46aee94d55504263e670/664b5d8577e1ea895b5d85eb_Vectors-Wrapper.svg" target="_blank" width="24">
+<div class="get-directions-2">Get Directions
+            </div>
+</a>
+<a class="button-2 w-button open-zocdoc-popup" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">Book
+            an appointment</a>
+</div>
+</div>
+<div class="frame-1000004856">
+<div class="map-container">
+<div data-address="80-10 Northern Boulevard Jackson Heights, NY 11372" data-lat="40.7558677" data-lng="-73.8842043" id="map" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button" style="background: none transparent; display: block; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; outline-offset: 3px; right: 0px; bottom: 0px; transform: translateX(100%);"></button></div><div tabindex="0" aria-label="Map" aria-roledescription="map" role="region" aria-describedby="09236A27-0B77-44A8-A474-127DB64DB86D" style="position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div id="09236A27-0B77-44A8-A474-127DB64DB86D" style="display: none;"><div class="LGLeeN-keyboard-shortcuts-view"><table><tbody><tr><td><kbd aria-label="Left arrow">←</kbd></td><td aria-label="Move left.">Move left</td></tr><tr><td><kbd aria-label="Right arrow">→</kbd></td><td aria-label="Move right.">Move right</td></tr><tr><td><kbd aria-label="Up arrow">↑</kbd></td><td aria-label="Move up.">Move up</td></tr><tr><td><kbd aria-label="Down arrow">↓</kbd></td><td aria-label="Move down.">Move down</td></tr><tr><td><kbd>+</kbd></td><td aria-label="Zoom in.">Zoom in</td></tr><tr><td><kbd>-</kbd></td><td aria-label="Zoom out.">Zoom out</td></tr><tr><td><kbd>Home</kbd></td><td aria-label="Jump left by 75%.">Jump left by 75%</td></tr><tr><td><kbd>End</kbd></td><td aria-label="Jump right by 75%.">Jump right by 75%</td></tr><tr><td><kbd>Page Up</kbd></td><td aria-label="Jump up by 75%.">Jump up by 75%</td></tr><tr><td><kbd>Page Down</kbd></td><td aria-label="Jump down by 75%.">Jump down by 75%</td></tr></tbody></table></div></div></div><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(https://naomedical.com/womens-health/locations/&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; will-change: transform; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 988; transform: matrix(1, 0, 0, 1, -93, -95);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -768px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -768px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -768px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 988; transform: matrix(1, 0, 0, 1, -93, -95);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -768px; top: -256px;"></div></div></div><div style="width: 40px; height: 40px; overflow: hidden; position: absolute; left: -20px; top: -40px; z-index: 0;"><img alt="" src="https://websitestaginbucket.storage.googleapis.com/wp-content/uploads/2024/05/01154043/map-pointer-1.svg" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 40px; height: 40px;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 988; transform: matrix(1, 0, 0, 1, -93, -95);"><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1208!3i1540!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=48486" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1207!3i1539!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=2269" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1206!3i1539!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=49403" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1206!3i1540!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=11683" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1205!3i1540!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=58817" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1208!3i1538!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=31361" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1207!3i1540!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=95620" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1209!3i1540!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=1352" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -768px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1204!3i1539!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=12600" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1207!3i1538!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=78495" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1209!3i1539!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=39072" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1205!3i1538!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=41692" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1208!3i1539!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=86206" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -768px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1204!3i1538!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=88826" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1205!3i1539!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=96537" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -768px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1204!3i1540!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=105951" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1209!3i1538!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546500!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=109415" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear;"><img draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i12!2i1206!3i1538!4i256!2m3!1e4!2st!3i781!2m3!1e0!2sr!3i781546560!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sTerrain!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy50OjJ8cC52Om9mZixzLnQ6NHxzLmU6bC5pfHAudjpvZmY!4e0!5m2!1e3!5f2!23i46991212!23i47054750!23i47083502&amp;amp;key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;token=125629" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; will-change: transform; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><slot></slot><span id="F1F8273E-2F7C-412C-9E26-0448FF4576BB" aria-live="polite" style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap; border: 0px;"></span><div title="80-10 Northern Boulevard Jackson Heights, NY 11372" aria-label="80-10 Northern Boulevard Jackson Heights, NY 11372" role="button" tabindex="0" style="width: 40px; height: 40px; overflow: hidden; position: absolute; cursor: pointer; touch-action: none; left: -20px; top: -40px; z-index: 0;"><img alt="" src="https://maps.gstatic.com/mapfiles/transparent.png" draggable="false" style="width: 40px; height: 40px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div><div class="gm-style-moc" style="z-index: 4; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; transition-property: opacity, display; transition-behavior: allow-discrete; opacity: 0; display: none;"><p class="gm-style-mot"></p></div></div><iframe aria-hidden="true" frameborder="0" tabindex="-1" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; opacity: 0;"></iframe><div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div><div><div class="gmnoprint gm-style-mtc-bbw" role="menubar" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div role="presentation" class="gm-style-mtc" style="float: left; position: relative;"><button draggable="false" aria-label="Show street map" title="Show street map" type="button" role="menuitemradio" aria-checked="true" aria-haspopup="true" style="background: none padding-box rgb(255, 255, 255); display: table-cell; border: 0px; margin: 0px; padding: 0px 17px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; text-align: center; height: 40px; vertical-align: middle; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; font-size: 18px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 35px; font-weight: 500;" id="60DBCE6D-1560-4ED7-AF20-32306B8CB6B8">Map</button><ul role="menu" aria-labelledby="60DBCE6D-1560-4ED7-AF20-32306B8CB6B8" style="background-color: rgb(255, 255, 255); list-style: none; padding: 2px; margin: 0px; z-index: -1; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 40px; text-align: left; display: none;"><li tabindex="-1" role="menuitemcheckbox" aria-label="Terrain" draggable="false" title="Show street map with terrain" aria-checked="true" class="ssQIHO-checkbox-menu-item" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 5px 8px 5px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span><span style="mask-image: url(https://naomedical.com/womens-health/locations/&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20d%3D%22M19%203H5c-1.11%200-2%20.9-2%202v14c0%201.1.89%202%202%202h14c1.11%200%202-.9%202-2V5c0-1.1-.89-2-2-2m-9%2014-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208z%22/%3E%3C/svg%3E&quot;); height: 1em; width: 1em; transform: translateY(0.15em);"></span><span style="mask-image: url(https://naomedical.com/womens-health/locations/&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%205v14H5V5zm0-2H5c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h14c1.1%200%202-.9%202-2V5c0-1.1-.9-2-2-2%22/%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3C/svg%3E&quot;); height: 1em; width: 1em; transform: translateY(0.15em); display: none;"></span></span><label style="cursor: inherit;">Terrain</label></li></ul></div><div role="presentation" class="gm-style-mtc" style="float: left; position: relative;"><button draggable="false" aria-label="Show satellite imagery" title="Show satellite imagery" type="button" role="menuitemradio" aria-checked="false" aria-haspopup="true" style="background: none padding-box rgb(255, 255, 255); display: table-cell; border: 0px; margin: 0px; padding: 0px 17px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; text-align: center; height: 40px; vertical-align: middle; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; font-size: 18px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 64px;" id="34CD1E20-3241-45E5-B02F-67164ABD3231">Satellite</button><ul role="menu" aria-labelledby="34CD1E20-3241-45E5-B02F-67164ABD3231" style="background-color: rgb(255, 255, 255); list-style: none; padding: 2px; margin: 0px; z-index: -1; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 40px; text-align: left; display: none;"><li tabindex="-1" role="menuitemcheckbox" aria-label="Labels" draggable="false" title="Show imagery with street names" aria-checked="true" class="ssQIHO-checkbox-menu-item" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 18px; background-color: rgb(255, 255, 255); padding: 5px 8px 5px 5px; direction: ltr; text-align: left; white-space: nowrap;"><span><span style="mask-image: url(https://naomedical.com/womens-health/locations/&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20d%3D%22M19%203H5c-1.11%200-2%20.9-2%202v14c0%201.1.89%202%202%202h14c1.11%200%202-.9%202-2V5c0-1.1-.89-2-2-2m-9%2014-5-5%201.41-1.41L10%2014.17l7.59-7.59L19%208z%22/%3E%3C/svg%3E&quot;); height: 1em; width: 1em; transform: translateY(0.15em);"></span><span style="mask-image: url(https://naomedical.com/womens-health/locations/&quot;data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M19%205v14H5V5zm0-2H5c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h14c1.1%200%202-.9%202-2V5c0-1.1-.9-2-2-2%22/%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3C/svg%3E&quot;); height: 1em; width: 1em; transform: translateY(0.15em); display: none;"></span></span><label style="cursor: inherit;">Labels</label></li></ul></div></div></div><div></div><div></div><div></div><div><button draggable="false" aria-label="Toggle fullscreen view" title="Toggle fullscreen view" type="button" aria-pressed="false" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E" alt="" style="height: 18px; width: 18px;"></button></div><div></div><div></div><div></div><div></div><div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" data-control-width="40" data-control-height="112" style="margin: 10px; user-select: none; position: absolute; bottom: 126px; right: 40px;"><div class="gmnoprint" data-control-width="40" data-control-height="40" style="display: none; position: absolute;"><div style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;"><button draggable="false" aria-label="Rotate map clockwise" title="Rotate map clockwise" type="button" class="gm-control-active" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12.06%209.06%204-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32m4.6-2.74%201.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22m12.06%209.06%204-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32m4.6-2.74%201.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22m12.06%209.06%204-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32m4.6-2.74%201.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button draggable="false" aria-label="Rotate map counterclockwise" title="Rotate map counterclockwise" type="button" class="gm-control-active" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12.06%209.06%204-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32m4.6-2.74%201.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22m12.06%209.06%204-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32m4.6-2.74%201.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22m12.06%209.06%204-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32m4.6-2.74%201.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18%22/%3E%3C/svg%3E" style="width: 20px; height: 20px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button draggable="false" aria-label="Tilt map" title="Tilt map" type="button" class="gm-tilt gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0zm10%200h8V9h-8zM0%207h8V0H0zm10-7v7h8V0z%22/%3E%3C/svg%3E" style="width: 18px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0zm10%200h8V9h-8zM0%207h8V0H0zm10-7v7h8V0z%22/%3E%3C/svg%3E" style="width: 18px;"><img alt="" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0zm10%200h8V9h-8zM0%207h8V0H0zm10-7v7h8V0z%22/%3E%3C/svg%3E" style="width: 18px;"></button></div></div><gmp-internal-camera-control data-control-width="40" data-control-height="40" draggable="false" class="gmnoprint" style="position: absolute; cursor: pointer; user-select: none; left: 0px; top: 0px;"><button draggable="false" aria-label="Map camera controls" title="Map camera controls" type="button" class="gm-control-active" aria-expanded="false" aria-controls="974F7F49-2CF5-416D-B9B0-36CB7E02F485" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2019.175%202.125-2.125%201.425%201.4L12%2022l-3.55-3.55%201.425-1.4zM4.825%2012l2.125%202.125-1.4%201.425L2%2012l3.55-3.55%201.4%201.425zm14.35%200L17.05%209.875l1.4-1.425L22%2012l-3.55%203.55-1.4-1.425zM12%204.825%209.875%206.95%208.45%205.55%2012%202l3.55%203.55-1.425%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2019.175%202.125-2.125%201.425%201.4L12%2022l-3.55-3.55%201.425-1.4zM4.825%2012l2.125%202.125-1.4%201.425L2%2012l3.55-3.55%201.4%201.425zm14.35%200L17.05%209.875l1.4-1.425L22%2012l-3.55%203.55-1.4-1.425zM12%204.825%209.875%206.95%208.45%205.55%2012%202l3.55%203.55-1.425%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%231a73e8%22%20d%3D%22m12%2019.175%202.125-2.125%201.425%201.4L12%2022l-3.55-3.55%201.425-1.4zM4.825%2012l2.125%202.125-1.4%201.425L2%2012l3.55-3.55%201.4%201.425zm14.35%200L17.05%209.875l1.4-1.425L22%2012l-3.55%203.55-1.4-1.425zM12%204.825%209.875%206.95%208.45%205.55%2012%202l3.55%203.55-1.425%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22m12%2019.175%202.125-2.125%201.425%201.4L12%2022l-3.55-3.55%201.425-1.4zM4.825%2012l2.125%202.125-1.4%201.425L2%2012l3.55-3.55%201.4%201.425zm14.35%200L17.05%209.875l1.4-1.425L22%2012l-3.55%203.55-1.4-1.425zM12%204.825%209.875%206.95%208.45%205.55%2012%202l3.55%203.55-1.425%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button><menu id="974F7F49-2CF5-416D-B9B0-36CB7E02F485" style="list-style: none; padding: 0px; display: none; position: absolute; z-index: 999999; margin: 10px; width: 140px; height: 140px; right: 100%; top: -60px;"><li><button draggable="false" aria-label="Move up" title="Move up" type="button" class="gm-control-active" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; top: 0px; left: 50%; transform: translateX(-50%);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2010.8-4.6%204.6L6%2014l6-6%206%206-1.4%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22m12%2010.8-4.6%204.6L6%2014l6-6%206%206-1.4%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2010.8-4.6%204.6L6%2014l6-6%206%206-1.4%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22m12%2010.8-4.6%204.6L6%2014l6-6%206%206-1.4%201.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button></li><li><button draggable="false" aria-label="Move left" title="Move left" type="button" class="gm-control-active" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; bottom: 50%; left: 0px; transform: translateY(50%);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m14%2018-6-6%206-6%201.4%201.4-4.6%204.6%204.6%204.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22m14%2018-6-6%206-6%201.4%201.4-4.6%204.6%204.6%204.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m14%2018-6-6%206-6%201.4%201.4-4.6%204.6%204.6%204.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22m14%2018-6-6%206-6%201.4%201.4-4.6%204.6%204.6%204.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button></li><li><button draggable="false" aria-label="Move right" title="Move right" type="button" class="gm-control-active" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; bottom: 50%; right: 0px; transform: translateY(50%);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.6%2012%208%207.4%209.4%206l6%206-6%206L8%2016.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.6%2012%208%207.4%209.4%206l6%206-6%206L8%2016.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.6%2012%208%207.4%209.4%206l6%206-6%206L8%2016.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M12.6%2012%208%207.4%209.4%206l6%206-6%206L8%2016.6z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button></li><li><button draggable="false" aria-label="Move down" title="Move down" type="button" class="gm-control-active" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; bottom: 0px; left: 50%; transform: translateX(-50%);"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2015.4-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22m12%2015.4-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2015.4-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22m12%2015.4-6-6L7.4%208l4.6%204.6L16.6%208%2018%209.4z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button></li><li><button draggable="false" aria-label="Zoom in" title="Zoom in" type="button" class="gm-control-active" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23666%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23333%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23111%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23d1d1d1%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M440-440H200v-80h240v-240h80v240h240v80H520v240h-80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button></li><li><button draggable="false" aria-label="Zoom out" title="Zoom out" type="button" class="gm-control-active" style="background: none 6px center / 28px no-repeat rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; border-radius: 50%; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; bottom: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23666%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23333%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23111%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22%23d1d1d1%22%20viewBox%3D%220%20-960%20960%20960%22%3E%3Cpath%20d%3D%22M200-440v-80h560v80z%22/%3E%3C/svg%3E" alt="" style="height: 28px; width: 28px;"></button></li></menu></gmp-internal-camera-control><button draggable="false" aria-label="Drag Pegman onto the map to open Street View" title="Drag Pegman onto the map to open Street View" type="button" class="gm-svpc" dir="ltr" data-control-width="40" data-control-height="40" style="background: rgb(255, 255, 255); border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; --pegman-scaleX: 1; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px; left: 0px; top: 72px;"><div style="position: absolute; left: 50%; top: 50%; transform: scaleX(var(--pegman-scaleX));"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2023%2038%22%3E%3Cpath%20d%3D%22M16.6%2038.1h-5.5l-.2-2.9-.2%202.9H5.2L5%2025.3l-.8%202a1.53%201.53%200%2001-1.9.9l-1.2-.4a1.58%201.58%200%2001-1-1.9v-.1c.3-.9%203.1-11.2%203.1-11.2a2.66%202.66%200%20012.3-2l.6-.5a6.93%206.93%200%20014.7-12%206.8%206.8%200%20014.9%202%207%207%200%20012%204.9%206.65%206.65%200%2001-2.2%205l.7.5a2.78%202.78%200%20012.4%202s2.9%2011.2%202.9%2011.3a1.53%201.53%200%2001-.9%201.9l-1.3.4a1.63%201.63%200%2001-1.9-.9l-.7-1.8zm-3.6-2h1.7l.2-15.8%201.9-.3%202.4%206.3.3-.1c-.2-.8-.8-3.2-2.8-10.9a.63.63%200%2000-.6-.5h-.6l-1.1-.9h-1.9l-.3-2a4.83%204.83%200%20003.5-4.7A4.78%204.78%200%200011%202.3h-.2a4.9%204.9%200%2000-1.4%209.6l-.3%202H7.2l-1%20.9h-.6a.74.74%200%2000-.6.5c-2%207.5-2.7%2010-3%2010.9l.3.1L4.8%2020l1.9.3.2%2015.8h1.6l.6-8.4a1.52%201.52%200%20011.5-1.4%201.5%201.5%200%20011.5%201.4zm6.6-9.7%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23333%22%20opacity%3D%22.7%22/%3E%3Cpath%20d%3D%22m5.9%2013.6%201.1-.9h7.8l1.2.9%22%20fill%3D%22%23ce592c%22/%3E%3Cellipse%20cx%3D%2210.9%22%20cy%3D%2213.1%22%20rx%3D%222.7%22%20ry%3D%22.3%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23ce592c%22%20opacity%3D%22.5%22/%3E%3Cpath%20d%3D%22m20.6%2026.1-2.9-11.3a1.71%201.71%200%2000-1.6-1.2H5.7a1.69%201.69%200%2000-1.5%201.3L1.1%2026.2a.61.61%200%2000.3.7l1.1.4a.61.61%200%2000.7-.3l2.7-6.7.2%2016.8h3.6l.6-9.3a.47.47%200%2001.44-.5h.06c.4%200%20.4.2.5.5l.6%209.3h3.6l.2-16.8%202.5%206.6a.52.52%200%2000.66.31l1.2-.40000000000001a.57.57%200%2000.5-.7Z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22m7%2013.6%203.9%206.7%203.9-6.7%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23cf572e%22%20opacity%3D%22.6%22/%3E%3Ccircle%20cx%3D%2210.9%22%20cy%3D%227%22%20r%3D%225.9%22%20fill%3D%22%23fdbf2d%22/%3E%3C/svg%3E" alt="Street View Pegman Control" style="height: 30px; width: 30px; position: absolute; transform: translate(-50%, -50%); pointer-events: none;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2038%22%3E%3Cpath%20d%3D%22m22%2026.6-2.9-11.3a2.78%202.78%200%2000-2.4-2l-.7-.5a6.82%206.82%200%20002.2-5%206.9%206.9%200%2000-13.8%200%207%207%200%20002.2%205.1l-.6.5a2.55%202.55%200%2000-2.3%202s-3%2011.1-3%2011.2v.1a1.58%201.58%200%20001%201.9l1.2.4a1.63%201.63%200%20001.9-.9l.8-2%20.2%2012.8h11.3l.2-12.6.7%201.8a1.54%201.54%200%20001.5%201%201.09%201.09%200%2000.5-.1l1.3-.4a1.85%201.85%200%2000.7-2Zm-1.2.9-1.2.4a.61.61%200%2001-.7-.3L16.4%2021l-.2%2016.8H6.8L6.6%2021l-2.7%206.7a.52.52%200%2001-.66.31l-1.1-.4a.52.52%200%2001-.31-.66l3.1-11.3a1.69%201.69%200%20011.5-1.3h.2l1-.9h2.3a5.9%205.9%200%20113.2%200h2.3l1.1.9h.2a1.71%201.71%200%20011.6%201.2l2.9%2011.3a.84.84%200%2001-.4.7Z%22%20fill%3D%22%23333%22%20fill-opacity%3D%22.2%22/%3E%26quot%3B%3C/svg%3E" alt="Pegman is on top of the Map" style="height: 30px; width: 30px; position: absolute; transform: translate(-50%, -50%); pointer-events: none; display: none;"><img alt="Street View Pegman Control" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2050%22%3E%3Cpath%20d%3D%22m34-30.4-2.9-11.3a2.78%202.78%200%2000-2.4-2l-.7-.5a6.82%206.82%200%20002.2-5%206.9%206.9%200%2000-13.8%200%207%207%200%20002.2%205.1l-.6.5a2.55%202.55%200%2000-2.3%202s-3%2011.1-3%2011.2v.1a1.58%201.58%200%20001%201.9l1.2.4a1.63%201.63%200%20001.9-.9l.8-2%20.2%2012.8h11.3l.2-12.6.7%201.8a1.54%201.54%200%20001.5%201%201.09%201.09%200%2000.5-.1l1.3-.4a1.85%201.85%200%2000.7-2Zm-1.2.9-1.2.4a.61.61%200%2001-.7-.3L28.4-36l-.2%2016.8h-9.4L18.6-36l-2.7%206.7a.52.52%200%2001-.66.31l-1.1-.4a.52.52%200%2001-.31-.66l3.1-11.3a1.69%201.69%200%20011.5-1.3h.2l1-.9h2.3a5.9%205.9%200%20113.2%200h2.3l1.1.9h.2a1.71%201.71%200%20011.6%201.2l2.9%2011.3a.84.84%200%2001-.4.7ZM34%2029.6l-2.9-11.3a2.78%202.78%200%2000-2.4-2l-.7-.5a6.82%206.82%200%20002.2-5%206.9%206.9%200%2000-13.8%200%207%207%200%20002.2%205.1l-.6.5a2.55%202.55%200%2000-2.3%202s-3%2011.1-3%2011.2v.1a1.58%201.58%200%20001%201.9l1.2.4a1.63%201.63%200%20001.9-.9l.8-2%20.2%2012.8h11.3l.2-12.6.7%201.8a1.54%201.54%200%20001.5%201%201.09%201.09%200%2000.5-.1l1.3-.4a1.85%201.85%200%2000.7-2Zm-1.2.9-1.2.4a.61.61%200%2001-.7-.3L28.4%2024l-.2%2016.8h-9.4L18.6%2024l-2.7%206.7a.52.52%200%2001-.66.31l-1.1-.4a.52.52%200%2001-.31-.66l3.1-11.3a1.69%201.69%200%20011.5-1.3h.2l1-.9h2.3a5.9%205.9%200%20113.2%200h2.3l1.1.9h.2a1.71%201.71%200%20011.6%201.2l2.9%2011.3a.84.84%200%2001-.4.7Z%22%20fill%3D%22%23333%22%20fill-opacity%3D%22.2%22/%3E%3Cpath%20d%3D%22M15.4%2038.8h-4a1.64%201.64%200%2001-1.4-1.1l-3.1-8a.9.9%200%2001-.5.1l-1.4.1a1.62%201.62%200%2001-1.6-1.4L2.3%2015.4l1.6-1.3a6.87%206.87%200%2001-3-4.6A7.14%207.14%200%20012%204%207.6%207.6%200%20016.7.9%207.14%207.14%200%200112.2%202a7.28%207.28%200%20012.3%209.6l2.1-.1.1%201c0%20.2.1.5.1.8a2.41%202.41%200%20011%201s1.9%203.2%202.8%204.9c.7%201.2%202.1%204.2%202.8%205.9a2.1%202.1%200%2001-.8%202.6l-.6.4a1.63%201.63%200%2001-1.5.2l-.6-.3a8.93%208.93%200%2000.5%201.3%207.91%207.91%200%20001.8%202.6l.6.3v4.6l-4.5-.1a7.32%207.32%200%2001-2.5-1.5zm-10-19.2%203.5%209.8%202.9%207.5h1.6V35l-1.9-9.4%203.1%205.4a8.24%208.24%200%20003.8%203.8h2.1v-1.4a14%2014%200%2001-2.2-3.1%2044.55%2044.55%200%2001-2.2-8L14.8%2016l3.2%205.6c.6%201.1%202.1%203.6%202.8%204.9l.6-.4c-.8-1.6-2.1-4.6-2.8-5.8-.9-1.7-2.8-4.9-2.8-4.9a.54.54%200%2000-.4-.3l-.7-.1-.1-.7a4.33%204.33%200%2000-.1-.5l-5.3.3%202.2-1.9a4.3%204.3%200%2000.9-1%205.17%205.17%200%2000.8-4%205.67%205.67%200%2000-2.2-3.4%205.09%205.09%200%2000-4-.8%205.67%205.67%200%2000-3.4%202.2%205.17%205.17%200%2000-.8%204%205.67%205.67%200%20002.2%203.4%203.13%203.13%200%20001%20.5l1.6.6-3.2%202.6%201%2011.5h.4z%22%20fill%3D%22%23333%22/%3E%3Cpath%20d%3D%22m3.35%2015.9%201.1%2012.5a.39.39%200%2000.36.42h.14l1.4-.1a.66.66%200%2000.5-.4l-.2-3.8-3.3-8.6Z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22m5.2%2028.8%201.1-.1a.66.66%200%2000.5-.4l-.2-3.8-1.2-3.1Z%22%20fill%3D%22%23ce592b%22%20fill-opacity%3D%22.25%22/%3E%3Cpath%20d%3D%22m21.4%2035.70000000000001-3.8-1.2-2.7-7.8L12%2015.5l3.4-2.9c.2%202.4%202.2%2014.1%203.7%2017.1%200%200%201.3%202.6%202.3%203.1zM13%2027.6l-2-.3%202.5%2010.1.9.4v-2.9%22%20fill%3D%22%23e5892b%22/%3E%3Cpath%20d%3D%22M17.8%2025.4c-.4-1.5-.7-3.1-1.1-4.8-.1-.4-.1-.7-.2-1.1l-1.1-2-1.7-1.6s.9%205%202.4%207.1a19.12%2019.12%200%20001.7%202.4Z%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23cf572e%22%20opacity%3D%22.6%22/%3E%3Cpath%20d%3D%22M14.4%2037.8h-3a.43.43%200%2001-.4-.4l-3-7.8-1.7-4.8-3-9%208.9-.4s2.9%2011.3%204.3%2014.4c1.9%204.1%203.1%204.7%205%205.8h-3.2s-4.1-1.2-5.9-7.7a.59.59%200%2000-.6-.4.62.62%200%2000-.3.7s.5%202.4.9%203.6a34.87%2034.87%200%20002%206%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22m15.4%2012.7-3.3%202.9-8.9.4%203.3-2.7%22%20fill%3D%22%23ce592b%22/%3E%3Cpath%20d%3D%22m9.1%2021.1%201.4-6.2-5.9.5%22%20style%3D%22isolation%3Aisolate%22%20fill%3D%22%23cf572e%22%20opacity%3D%22.6%22/%3E%3Cpath%20d%3D%22M12%2013.5a4.75%204.75%200%2001-2.6%201.1c-1.5.3-2.9.2-2.9%200s1.1-.6%202.7-1%22%20fill%3D%22%23bb3d19%22/%3E%3Ccircle%20cx%3D%227.92%22%20cy%3D%228.19%22%20r%3D%226.3%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M4.7%2013.6a6.21%206.21%200%20008.4-1.9v-.1a8.89%208.89%200%2001-8.4%202%22%20fill%3D%22%23ce592b%22%20fill-opacity%3D%22.25%22/%3E%3Cpath%20d%3D%22m21.2%2027.2.6-.4a1.09%201.09%200%2000.4-1.3c-.7-1.5-2.1-4.6-2.8-5.8-.9-1.7-2.8-4.9-2.8-4.9a1.6%201.6%200%2000-2.17-.65l-.23.15a1.68%201.68%200%2000-.4%202.1s2.3%203.9%203.1%205.3c.6%201%202.1%203.7%202.9%205.1a.94.94%200%20001.24.49z%22%20fill%3D%22%23fdbf2d%22/%3E%3Cpath%20d%3D%22M19.4%2019.8c-.9-1.7-2.8-4.9-2.8-4.9a1.6%201.6%200%2000-2.17-.65l-.23.15-.3.3c1.1%201.5%202.9%203.8%203.9%205.4%201.1%201.8%202.9%205%203.8%206.7l.1-.1a1.09%201.09%200%2000.4-1.3%2057.67%2057.67%200%2000-2.7-5.6Z%22%20fill%3D%22%23ce592b%22%20fill-opacity%3D%22.25%22/%3E%3C/svg%3E" style="display: none; height: 40px; width: 40px; position: absolute; transform: translate(-60%, -45%); pointer-events: none;"></div></button></div></div><div><div style="margin: 0px 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" title="Open this area in Google Maps (opens a new window)" aria-label="Open this area in Google Maps (opens a new window)" href="https://maps.google.com/maps?ll=40.755868,-73.884204&amp;amp;z=12&amp;amp;t=p&amp;amp;hl=en-US&amp;amp;gl=US&amp;amp;mapclient=apiv3" style="display: inline;"><div style="width: 66px; height: 26px;"><img alt="Google" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2069%2029%22%3E%3Cg%20fill%3D%22%23fff%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.5%22%20opacity%3D%22.9%22%3E%3Cpath%20d%3D%22m17.4706%207.33616.5412-.54112-.5519-.53011c-1.3636-1.30974-3.2017-2.31971-5.7591-2.31971-4.6137%200-8.50262%203.75517-8.50262%208.39578%200%204.6407%203.88892%208.3958%208.50262%208.3958%202.4704%200%204.3765-.8188%205.8732-2.3679%201.5695-1.5729%202.0216-3.7363%202.0216-5.4119%200-.5232-.044-1.0254-.1295-1.4529l-.1206-.6029h-8.3947v3.5942h4.8301c-.1724.5966-.4321%201.0286-.7491%201.3461-.6288.6214-1.5823%201.3094-3.331%201.3094-2.65245%200-4.73598-2.1312-4.73598-4.8099%200-2.67861%202.08353-4.80981%204.73598-4.80981%201.4362%200%202.4752.5607%203.257%201.29229l.5298.49574.513-.51303z%22/%3E%3Cpath%20d%3D%22M24.8656%2020.7286c3.089%200%205.6036-2.4192%205.6036-5.6692%200-3.2681-2.5162-5.66931-5.6036-5.66931-3.0873%200-5.6035%202.40121-5.6035%205.66931%200%203.25%202.5145%205.6692%205.6035%205.6692Zm0-7.9004c1.014%200%201.9766.837%201.9766%202.2312%200%201.3805-.9653%202.2311-1.9766%202.2311-1.0099%200-1.9765-.8574-1.9765-2.2311%200-1.3874.9639-2.2312%201.9765-2.2312Z%22/%3E%3Cpath%20d%3D%22M35.7511%2017.2905h-.0042c-1.0099%200-1.9766-.8574-1.9766-2.2311%200-1.3874.964-2.2312%201.9766-2.2312%201.0139%200%201.9765.837%201.9765%202.2312%200%201.3845-.968%202.2367-1.9723%202.2311Zm-.0124%203.4381c3.089%200%205.6035-2.4192%205.6035-5.6692%200-3.2681-2.5162-5.66931-5.6035-5.66931-3.0874%200-5.6036%202.40121-5.6036%205.66931%200%203.2508%202.5236%205.6692%205.6036%205.6692Z%22/%3E%3Cpath%20d%3D%22M51.953%2010.4357v-.74997h-3.5531v.12253c-.55-.26178-1.2022-.42639-1.9191-.42639-2.8837%200-5.464%202.51793-5.464%205.69393%200%202.1269%201.164%203.9479%202.8033%204.9137l-.0658.0273-1.8806.7802-.6929.2874.2876.6928c.6228%201.5004%202.2776%203.3697%205.0535%203.3697%201.4105%200%202.787-.4145%203.814-1.4093%201.0332-1.0009%201.6171-2.4965%201.6171-4.4653zm-7.2194%209.9844-.0002-.0005c.5552.2005%201.1446.309%201.7474.309.6808%200%201.3058-.1467%201.841-.3891-.0876.3891-.2417.671-.4252.8682-.2812.3022-.7202.5011-1.3747.5011-.91190000000001%200-1.5201-.6476-1.7883-1.2887Zm1.9361-7.5919c.9722%200%201.878.8483%201.878%202.2558%200%201.3796-.8956%202.2147-1.878%202.2147-1.0428%200-1.993-.8738-1.993-2.2147%200-1.3754.9595-2.2558%201.993-2.2558Zm9.069-7.60739v-.75h-3.6599V20.4412h3.6599z%22/%3E%3Cpath%20d%3D%22m63.9128%2016.0614-.6183-.4122-.4179.6145c-.4562.6709-1.0102%201.0432-1.8025%201.0432-.4306%200-.7595-.0981-1.0197-.2622-.07-.0441-.1383-.0951-.2046-.1536l5.6999-2.3625.6825-.283L65.9596%2013.5589l-.219-.5514c-.4528-1.2075-1.8899-3.60918-4.9128-3.60918-2.9833%200-5.3244%202.36358-5.3244%205.66928%200%203.1475%202.3222%205.6693%205.5625%205.6693%202.6043%200%204.1111-1.5991%204.7283-2.5156l.421-.625L65.5882%2017.1783zm-2.5667-3.2103-1.9353.8015c.3795-.5743%201.0107-.8572%201.4909-.8572.1653%200%20.3136.0207.4444.0557Z%22/%3E%3C/g%3E%3Cpath%20fill%3D%22%233c4043%22%20d%3D%22M11.7008%2019.9868c-4.21304%200-7.75262-3.4328-7.75262-7.6458%200-4.21297%203.53958-7.64578%207.75262-7.64578%202.3323%200%203.9912.91159%205.2395%202.11061l-1.47%201.47003c-.8952-.83767-2.1106-1.49467-3.7695-1.49467-3.07972%200-5.48598%202.48016-5.48598%205.55981%200%203.0797%202.40626%205.5599%205.48598%205.5599%201.9956%200%203.1289-.8048%203.8598-1.5275.5995-.5996.9855-1.4537%201.1333-2.628h-4.9931v-2.0942h7.0298c.0739.3695.115.8212.115%201.3058%200%201.5685-.427%203.5067-1.8067%204.8864-1.3469%201.3961-3.0551%202.1434-5.3381%202.1434m18.0184-4.9274c0%202.8333-2.1763%204.9192-4.8536%204.9192-2.6772%200-4.8535-2.0859-4.8535-4.9192%200-2.8498%202.1763-4.9193%204.8535-4.9193%202.6773%200%204.8536%202.0695%204.8536%204.9193m-2.127%200c0-1.7739-1.2648-2.9812-2.7266-2.9812s-2.7265%201.2155-2.7265%202.9812c0%201.7492%201.2647%202.9811%202.7265%202.9811s2.7266-1.2237%202.7266-2.9811m13%200c0%202.8333-2.1763%204.9192-4.8535%204.9192-2.6691%200-4.8536-2.0859-4.8536-4.9192%200-2.8498%202.1763-4.9193%204.8536-4.9193%202.6772%200%204.8535%202.0695%204.8535%204.9193m-2.1188%200c0-1.7739-1.2647-2.9812-2.7265-2.9812s-2.7266%201.2155-2.7266%202.9812c0%201.7492%201.2648%202.9811%202.7266%202.9811%201.4618.0082%202.7265-1.2237%202.7265-2.9811m12.7296-4.6237v8.8366c0%203.6382-2.1435%205.1246-4.6811%205.1246-2.3899%200-3.8188-1.6014-4.3609-2.9072l1.8807-.7802c.3367.8048%201.158%201.7493%202.4802%201.7493%201.626%200%202.628-1.0101%202.628-2.8908v-.7063h-.074c-.4845.5995-1.4207%201.1169-2.5951%201.1169-2.4637%200-4.714-2.1434-4.714-4.9028%200-2.7758%202.2585-4.9439%204.714-4.9439%201.1744%200%202.1106.5256%202.5951%201.1004h.074v-.7966zm-1.9053%204.6483c0-1.7328-1.158-3.0058-2.628-3.0058-1.4947%200-2.743%201.2647-2.743%203.0058%200%201.7164%201.2483%202.9647%202.743%202.9647%201.47%200%202.628-1.2483%202.628-2.9647m5.691-9.86319V19.6912h-2.1599V5.22081zm8.5081%2011.46459%201.6754%201.1169c-.5421.8049-1.8478%202.1846-4.1063%202.1846-2.8004%200-4.8125-2.1599-4.8125-4.9193%200-2.9237%202.0367-4.9193%204.5744-4.9193%202.554%200%203.8023%202.0285%204.213%203.129l.2217.5584-6.5782%202.7266c.501.9855%201.2894%201.4946%202.3898%201.4946%201.1005%200%201.8643-.5502%202.4227-1.3715m-5.1656-1.7739%204.4019-1.8231c-.2464-.616-.9691-1.043-1.8314-1.043-1.1005%200-2.628.9691-2.5705%202.8661%22/%3E%3C/svg%3E" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div></div><div></div><div><div style="display: inline-flex; position: absolute; right: 0px; bottom: 0px;"><div class="gmnoprint" style="z-index: 1000001;"><div draggable="false" class="gm-style-cc" style="user-select: none; position: relative; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button" style="background: none; display: inline-block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;">Keyboard shortcuts</button></div></div></div><div class="gmnoprint" style="z-index: 1000001;"><div draggable="false" class="gm-style-cc" style="user-select: none; position: relative; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button draggable="false" aria-label="Map Data" title="Map Data" type="button" style="background: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit; display: none;">Map Data</button><span style="">Map data ©2026 Google</span></div></div></div><div class="gmnoscreen"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2026 Google</div></div><button draggable="false" aria-label="Map Scale: 2 km per 69 pixels" title="Map Scale: 2 km per 69 pixels" type="button" class="gm-style-cc" aria-describedby="573BEF98-9494-4328-844A-C05051ED8805" style="background: none; display: none; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><span style="color: rgb(0, 0, 0);">2 km&nbsp;</span><div style="position: relative; display: inline-block; height: 8px; bottom: -1px; width: 73px;"><div style="width: 100%; height: 4px; position: absolute; left: 0px; top: 0px;"></div><div style="width: 4px; height: 8px; left: 0px; top: 0px;"></div><div style="width: 4px; height: 8px; position: absolute; right: 0px; bottom: 0px;"></div><div style="position: absolute; background-color: rgb(0, 0, 0); height: 2px; left: 1px; bottom: 1px; right: 1px;"></div><div style="position: absolute; width: 2px; height: 6px; left: 1px; top: 1px; background-color: rgb(0, 0, 0);"></div><div style="width: 2px; height: 6px; position: absolute; background-color: rgb(0, 0, 0); bottom: 1px; right: 1px;"></div></div></div><span id="573BEF98-9494-4328-844A-C05051ED8805" style="display: none;">Click to toggle between metric and imperial units</span></button><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; position: relative; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a aria-label="Terms (opens in new tab)" href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms</a></div></div><div draggable="false" class="gm-style-cc" style="user-select: none; position: relative; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" aria-label="Report a map error (opens in new tab)" href="https://www.google.com/maps/@40.7558677,-73.8842043,12z/data=!5m1!1e4!10m1!1e1!12b1?source=apiv3&amp;amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; text-decoration: none; position: relative; color: rgb(0, 0, 0);">Report a map error</a></div></div></div></div></div></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="reviews-container">
+<h2>What Our Patients Say</h2>
+<div class="review-wrapper">
+<div class="review-row">
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-4.png">
+</div>
+<div class="review-name">Cristian R.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(4.9)</div>
+</div>
+<p class="review-content">Quick and comprehensive</p>
+</div>
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-3.png">
+</div>
+<div class="review-name">Joanna Z.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(5)</div>
+</div>
+<p class="review-content">Great fast experience from front to back. All the staff were helpful</p>
+</div>
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-6.png">
+</div>
+<div class="review-name">Salvatore P.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(4.9)</div>
+</div>
+<p class="review-content">Professional, friendly, and quick</p>
+</div>
+</div>
+<div class="review-row">
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-1.png">
+</div>
+<div class="review-name">Andrew G.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(5)</div>
+</div>
+<p class="review-content">The facility was remodeled and looks great. Fast and efficient service to resolve my
+            issue</p>
+</div>
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp.png">
+</div>
+<div class="review-name">Sarah R.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(4.9)</div>
+</div>
+<p class="review-content">Awesome service Everyone, from receptionist to nurse and doctor are very
+            professional and super friendly. There were no delays or hold ups</p>
+</div>
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-7.png">
+</div>
+<div class="review-name">Amelfis M.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(5)</div>
+</div>
+<p class="review-content">Fast and very informative to questions! Highly recommended</p>
+</div>
+</div>
+<div class="review-row">
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-2.png">
+</div>
+<div class="review-name">Robyn F.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(5)</div>
+</div>
+<p class="review-content">My new favorite. Top-notch medical expertise.</p>
+</div>
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-5.png">
+</div>
+<div class="review-name">Louia K.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(4.9)</div>
+</div>
+<p class="review-content">Expert care, highly recommended.</p>
+</div>
+<div class="review-holder">
+<div class="pfp-container">
+<img alt="Reviewer Image" src="https://naomedical.com/womens-health/images/review-pfp-8.png">
+</div>
+<div class="review-name">Peter P.</div>
+<div class="verified-container">
+<span class="verified-icon"><img src="https://naomedical.com/womens-health/images/verified-icon.svg"></span>
+<span class="verified-text">Verified Patient</span>
+</div>
+<div class="rating-container">
+<div class="rating-icon"><img src="https://naomedical.com/womens-health/images/review-stars.svg"></div>
+<div class="rating-text">(5)</div>
+</div>
+<p class="review-content">Very pleasant and thorough!</p>
+</div>
+</div>
+</div>
+<a class="expand-review" href="#">See More</a>
+</div>
+<section class="main-content">
+<h1>Walk-In GYN Care and Women's Health for Jackson Heights, Queens Patients</h1>
+<p>Nao Medical serves patients in Jackson Heights, Elmhurst, Corona, and nearby Queens neighborhoods with women's health visits, same-day and walk-in GYN care when available, Pap smears, pelvic exams, birth control support, STI testing, and follow-up that is easier to keep than bouncing between disconnected clinics.</p>
+<p>If you are searching for a women's health clinic near me, walk-in GYN care, gynecologist near me walk in, Pap smear near me, or birth control care in Jackson Heights, Queens, Nao Medical gives you a local clinic path with online scheduling and follow-up.</p>
+<h2>Why patients in Jackson Heights choose Nao Medical for women's health</h2>
+<p>Jackson Heights is a strong Queens option for patients looking for walk-in gyn care, same-day women's-health visits, Pap smears, pelvic exams, and contraceptive support.</p>
+<h3>Same-day and walk-in GYN care when you need a fast answer</h3>
+<p>Many patients are not looking for a months-out specialist consult. They need a practical clinic for discharge, irritation, pelvic discomfort, birth control questions, STI concerns, or a preventive visit that should not keep getting delayed.</p>
+<h3>Pap smears, pelvic exams, birth control, and sexual-health support in one system</h3>
+<p>Nao Medical supports routine gynecologic screening and common women's-health needs in one place. That includes Pap smears, pelvic exams, birth control counseling and refills, STI testing, vaginitis concerns, and follow-up when you need a clearer plan.</p>
+<h3>Insurance-friendly scheduling, including Medicaid and Medicare</h3>
+<p>Nao Medical works with many major insurance plans for women's health, including Medicaid, Medicare, 1199, Healthfirst, MetroPlus, Fidelis Care, UnitedHealthcare, EmblemHealth, Aetna, Cigna, and Blue Cross Blue Shield. Benefits can be reviewed before you start so the booking path is clearer.</p>
+<h2>What women's-health and GYN services can start from Jackson Heights</h2>
+<p>Patients in Jackson Heights commonly book for:</p>
+<ul class="list" role="list">
+<li>Pap smears and pelvic exams.</li>
+<li>Birth control consults, contraceptive refills, and sexual-health questions.</li>
+<li>STI testing, vaginal irritation, discharge, odor, and related walk-in GYN concerns.</li>
+<li>UTI-related symptoms and lower urinary discomfort that need evaluation.</li>
+<li>Preventive women's-health visits and follow-up care across NYC and Long Island.</li>
+</ul>
+<h2>How the Jackson Heights women's-health booking flow works</h2>
+<h3>Step 1: Book online, call, or use same-day availability when appropriate</h3>
+<p>Book online or call to request the right women's-health visit. Same-day and walk-in availability may be possible depending on schedule, location, and visit type.</p>
+<h3>Step 2: Complete the visit that matches the concern</h3>
+<p>Your visit can focus on preventive screening, a Pap smear, pelvic exam, birth control care, STI testing, vaginal symptoms, or another common GYN concern. The goal is to get to the right evaluation quickly instead of sending you through unnecessary friction.</p>
+<h3>Step 3: Leave with a clear plan</h3>
+<p>If you need testing, treatment, prescriptions, follow-up, or escalation to a higher-acuity setting, the team can guide the next step instead of leaving you with a vague answer and no path forward.</p>
+<h2>Using the Jackson Heights location as your local women's-health clinic</h2>
+<p>Patients want more than a random directory listing. They want a Nao Medical location that feels reachable and real. The Jackson Heights location gives patients in Jackson Heights, Elmhurst, Corona, and nearby Queens neighborhoods a neighborhood clinic inside a larger women's-health program that also reaches patients across Queens and the rest of New York City.</p>
+<p>This matters if you want faster scheduling for Pap smears, walk-in GYN care, pelvic exams, or birth control support without relying on an expensive emergency-room visit or an appointment that is too far out to help.</p>
+<h2>Insurance and self-pay for women's health in Jackson Heights</h2>
+<p>Nao Medical works with many major insurance plans and can help patients understand likely women's-health coverage before or during scheduling. That includes many Medicaid and Medicare pathways as well as major commercial plans.</p>
+<p>If you are not planning to use insurance, ask about current self-pay options before you book so expectations are clear from the start.</p>
+<h2>FAQ for Jackson Heights women's-health patients</h2>
+<h3>Are these visits walk-in or appointment-based?</h3>
+<p>Both can matter. Booking online is the most reliable path, but many patients use Nao Medical for same-day and walk-in women's-health needs when schedules allow.</p>
+<h3>Can I come here for a Pap smear or pelvic exam?</h3>
+<p>Yes. Pap smears and pelvic exams are part of the women's-health offering, along with birth control visits, STI testing, and evaluation of common GYN concerns.</p>
+<h3>Do you accept Medicaid and Medicare?</h3>
+<p>Yes. Medicaid and Medicare are part of the insurance mix here, along with many commercial plans and other in-network options.</p>
+<h3>Is this the right visit for severe pain or heavy bleeding?</h3>
+<p>No. If you have severe pain, heavy bleeding, fainting, or another emergency, go to the nearest emergency room or call 911. Nao Medical is for scheduled and walk-in women's-health care, not emergency obstetric or surgical care.</p>
+<h2>Book women's health and walk-in GYN care for Jackson Heights</h2>
+<p>If you want a women's health clinic, walk-in GYN care, Pap smear, pelvic exam, or birth control visit for Jackson Heights, Queens, book online or call Nao Medical to choose the right visit type.</p>
+<p>You can also review the <a href="https://naomedical.com/services/womens-health/womens-health-clinic-near-me-expert-women-wellness-care.html">main women's-health clinic overview</a> or the broader <a href="https://naomedical.com/womens-health-and-gyn-services-in-Manhattan-NYC-Long-Island.html">women's health and GYN services details for Manhattan, NYC, and Long Island</a> before booking.</p>
+</section>
+<section class="footer-light footer-dark-blue">
+<div class="container-12">
+<div class="footer-wrapper-two">
+<a class="footer-brand w-inline-block" href="https://naomedical.com/services/womens-health/womens-health-clinic-near-me-expert-women-wellness-care.html">
+<img alt="Naomedical Logo" loading="lazy" src="https://naomedical.com/womens-health/images/footer-white-logo.svg">
+</a>
+<div class="footer-block-two">
+<a class="footer-link-two" href="https://www.facebook.com/naomedical">
+<img alt="Facebook" loading="lazy" src="https://naomedical.com/womens-health/images/fb-green.svg"> Facebook
+            </a>
+<a class="footer-link-two" href="https://www.instagram.com/naomedical_/">
+<img alt="Instagram" loading="lazy" src="https://naomedical.com/womens-health/images/insta-green.svg"> Instagram
+            </a>
+<a class="footer-link-two" href="https://twitter.com/NaoMedical">
+<img alt="Twitter" loading="lazy" src="https://naomedical.com/womens-health/images/x-green.svg"> Twitter
+            </a>
+<a class="footer-link-two" href="https://www.linkedin.com/company/naomedical">
+<img alt="Linkedin" loading="lazy" src="https://naomedical.com/womens-health/images/linkedin-green.svg"> LinkedIn
+            </a>
+</div>
+</div>
+<div class="footer-divider-two">
+</div>
+<p>If you are vision-impaired or have some other impairment covered by
+        the Americans with Disabilities Act or a similar law, and you wish to
+        discuss potential accommodations related to using this website, please
+        contact Sharad Suri at <b>service@naomedical.com</b> or by phone at
+        <b>(917) 633-1548 Extension 288</b>. In our goal to answer your
+        questions as quick as possible, we use the assistance of a large
+        language model wherever applicable. If there are any errors or
+        concerns, please bring it to our attention by emailing us.
+      </p>
+</div>
+</section>
+<div class="zocdoc-book-apt-popup-container" id="zocdoc-booking-popup" aria-hidden="true" style="; display: none !important; visibility: hidden !important;">
+<div class="zocdoc-book-apt-popup-wrapper" aria-hidden="true" style="; display: none !important; visibility: hidden !important;">
+<a class="zocdoc-popup-close" href="#"><img alt="close" src="https://naomedical.com/campaigns/nao-medical-assets/images/close-btn.svg"></a>
+<div class="zocdoc-popup-content">
+<img alt="Book Appointment" class="zocdoc-popup-art" src="https://naomedical.com/campaigns/nao-medical-assets/images/zocdoc-popup-art.png">
+<div class="zocdoc-popup-inner-content">
+<h2>Save Your Spot</h2>
+<p>Enter your phone number to begin scheduling your appointment.</p>
+<input id="zocdoc-phone-num" name="Phone Number" placeholder="Phone Number*" type="text">
+<span id="zocdoc-input-message">You will be redirected to complete the appointment booking.</span>
+<a id="submit-zocdoc-num" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">Next: Book Appointment <img alt="arrow" src="https://naomedical.com/campaigns/nao-medical-assets/images/Arrow.svg"></a>
+</div>
+</div>
+<div class="select-appointment-container hide">
+<div class="row book-apt-content active">
+<div class="col-md-4 col-sm-12 col-12">
+<div class="bookan-pp-box">
+<!--<div class=""><lable class="rec-lbl-pp">Recommended</label></div>-->
+<div style="display: flex;justify-content: center;align-items: center;">
+<div>
+<img alt="app" decoding="async" src="https://naomedical.com/wp-content/uploads/2024/04/ambulance-hd-cr.png" style="width: 75px;">
+</div>
+<div style="margin-left: 10px;">
+<h4 style="margin: 10px 0;text-align: left;"><br></h4>
+<h4 style="margin: 10px 0;text-align: left;">Walk-In GYN Care</h4>
+<h4 style="margin: 10px 0;text-align: left;"><br></h4>
+</div>
+</div>
+<div>
+<a class="btn btn-pp-bnw zocdocBookAptBtn urgentCareBtn" style="position: relative;" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">
+                              Book Now
+                          </a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12 col-12">
+<div class="bookan-pp-box">
+<div style="display: flex;justify-content: center;align-items: center;">
+<div class="">
+<img alt="app" decoding="async" src="https://naomedical.com/wp-content/uploads/2024/04/healthcare-hd.png" style="width: 64px;">
+</div>
+<div style="margin-left: 10px;">
+<h4 style="margin: 10px 0;text-align: left;">Pap Smears</h4>
+<h4 style="margin: 10px 0;text-align: left;">Birth Control</h4>
+<h4 style="margin: 10px 0;text-align: left;">STI Testing</h4>
+</div>
+</div>
+<div>
+<a class="btn btn-pp-bnw zocdocBookAptBtn primaryCareBtn" style="position: relative;" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">
+                              Book Now
+                          </a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12 col-12">
+<div class="bookan-pp-box">
+<div style="display: flex;justify-content: center;align-items: center;">
+<div class="">
+<img alt="app" decoding="async" src="https://naomedical.com/wp-content/uploads/2024/04/tele%20health.png" style="width: 64px;">
+</div>
+<div style="margin-left: 10px;">
+<h4 style="margin: 10px 0;text-align: left;"><br></h4>
+<h4 style="margin: 10px 0;text-align: left;">Women's Health Program</h4>
+<h4 style="margin: 10px 0;text-align: left;"><br></h4>
+</div>
+</div>
+<div>
+<a class="btn btn-pp-bnw zocdocBookAptBtn virtualCareBtn" style="position: relative;" data-demo-direct-booking="true" href="https://book.naomedical.com/womens-health/jackson-heights-queens" target="_self" rel="noopener">
+                              Book Now
+                          </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="note">Nao Medical will never sell your information to a third party.</p>
+</div>
+</div>
+<script crossorigin="anonymous" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=664b46aee94d55504263e670" type="text/javascript"></script>
+<script src="https://naomedical.com/womens-health/js/webflow.js" type="text/javascript"></script>
+<!--Google maps-->
+<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1lS3C2Y7DraoZyjsCv5JOhFboPxP8ltI&amp;amp;callback=initMap&amp;amp;libraries=places"></script>
+<script src="https://naomedical.com/womens-health/js/loc-functions.min.js" type="text/javascript"></script>
+<script defer="" src="https://naomedical.com/womens-health/js/google-map.min.js" type="text/javascript"></script>
+<!-- Podium Webchat Script -->
+<script data-organization-api-token="3739c8e4-421d-4981-9b92-149a6880150c" defer="" id="podium-widget" src="https://connect.podium.com/widget.js#ORG_TOKEN=3739c8e4-421d-4981-9b92-149a6880150c"></script>
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Regular expression to validate phone number
+        const phonePattern = /^[0-9]{10}$/;
+        const zocDocPopupbutton = document.getElementById('submit-zocdoc-num');
+        const phoneInput = document.getElementById('zocdoc-phone-num');
+        const validationMessage = document.getElementById('zocdoc-input-message');
+
+        document.querySelector(".zocdoc-popup-close").addEventListener("click", function(e){
+            e.preventDefault();
+  
+            document.getElementById("zocdoc-booking-popup").classList.remove("active");
+
+            document.querySelector(".zocdoc-popup-content").classList.remove("hide");
+            document.querySelector(".select-appointment-container").classList.add("hide");
+        });
+  
+  
+        // Select all buttons with the class "ad-menu-btn"
+        const bookAptButtons = document.querySelectorAll('.open-zocdoc-popup');
+        
+        document.addEventListener('click', function(e) {
+          // Check if the clicked element has the target classes
+          if (e.target.classList.contains('open-zocdoc-popup') || e.target.classList.contains('book-app-btn-2') || e.target.classList.contains('button-2') || e.target.classList.contains('button-3') || e.target.closest('.book-apt-header')) {
+            e.preventDefault();
+
+            if(e.target.classList.contains('book-apt-header') || e.target.closest('book-apt-header')){
+                zocDocPopupbutton.classList.add("book-apt-header-clicked");
+            }
+            else{
+                zocDocPopupbutton.classList.remove("book-apt-header-clicked");
+            }
+  
+            // Set the href attribute of "submit-zocdoc-num" based on the clicked button's href
+            if(e.target.getAttribute("href")){
+              document.getElementById("submit-zocdoc-num").setAttribute("href", e.target.getAttribute("href"));
+            }
+            else if(e.target.closest('.open-zocdoc-popup') && e.target.closest('.open-zocdoc-popup').getAttribute("href")){
+                document.getElementById("submit-zocdoc-num").setAttribute("href", e.target.closest('.open-zocdoc-popup').getAttribute("href"));
+            }
+            else{
+                if(e.target.querySelector("a") != null){
+                    document.getElementById("submit-zocdoc-num").setAttribute("href", e.target.querySelector("a").getAttribute("href"));
+                }
+                else{
+                    document.getElementById("submit-zocdoc-num").setAttribute("href", e.target.closest("a").getAttribute("href"));
+                }
+            }
+  
+            // Activate the booking popup
+            document.getElementById("zocdoc-booking-popup").classList.add('active');
+          }
+        });
+
+        function formatPhoneNumber(value) {
+            // Remove non-numeric characters
+            value = value.replace(/\D/g, '');
+
+            // Limit to 10 digits
+            if (value.length > 10) {
+                value = value.slice(0, 10); // Only allow up to 10 digits
+            }
+
+            // Format the phone number
+            if (value.length <= 3) {
+                return `(${value}`;
+            } else if (value.length <= 6) {
+                return `(${value.slice(0, 3)})-${value.slice(3)}`;
+            } else {
+                return `(${value.slice(0, 3)})-${value.slice(3, 6)}-${value.slice(6, 10)}`;
+            }
+        }
+
+        function validatePhone() {
+            const phone = phoneInput.value.trim().replace(/\D/g, ''); // Strip non-numeric characters for validation
+
+            if (!phonePattern.test(phone)) {
+                validationMessage.textContent = 'Please enter a valid 10-digit phone number.';
+                validationMessage.classList.add("error");
+                return false;
+            } else {
+                validationMessage.innerHTML = "You will be redirected to complete the appointment booking.";
+                validationMessage.classList.remove("error");
+                return true;
+            }
+        }
+
+        // Attach validation and formatting to input events
+        phoneInput.addEventListener('input', function(e) {
+            const formattedValue = formatPhoneNumber(e.target.value);
+            phoneInput.value = formattedValue; // Set the formatted value back to the input
+            validatePhone(); // Call validation on every input change
+        });
+
+        phoneInput.addEventListener('keydown', function (e) {
+            // Prevent entering more than 10 digits
+            const currentValue = phoneInput.value.replace(/\D/g, ''); // Strip non-numeric characters
+            if (currentValue.length >= 10 && e.key !== 'Backspace') {
+                e.preventDefault(); // Prevent further input if the phone number already has 10 digits
+            }
+
+            // Check if the pressed key is one of the arrow keys
+            if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+                e.preventDefault(); // Prevent the default action (changing the value)
+            }
+
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Prevent default Enter key behavior
+                zocDocPopupbutton.click(); // Trigger button click (assuming this is correct)
+            }
+        });
+  
+        // Final validation on submit
+        zocDocPopupbutton.addEventListener('click', function (event) {
+            event.preventDefault();
+  
+            const zocDocURL = this.getAttribute("href");
+  
+            if (validatePhone()) {
+                const formData = {
+                    phone: phoneInput.value,
+                    "additional-information": "zocdoc-pre-fill",
+                    source: window.location.href,
+                };
+  
+                fetch('https://naomedicaltesting.pythonanywhere.com/sendEmail', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        validationMessage.innerHTML = "You will be redirected to complete the appointment booking.";
+                        phoneInput.value = "";
+  
+                        // Redirect to zocdoc page
+                        if(zocDocPopupbutton.classList.contains("book-apt-header-clicked")){
+                            document.querySelector(".zocdoc-popup-content").classList.add("hide");
+                            document.querySelector(".select-appointment-container").classList.remove("hide");
+                        }
+                        else{
+                            window.open(zocDocURL, "_self");
+                        }
+  
+                        gtag('event', 'form_submitted', {
+                            'event_category': 'Form',
+                            'event_label': 'Nao zocdoc form',
+                            'value': 1
+                        });
+                    })
+                    .catch(error => {
+                        document.getElementById('form-messages').textContent = 'There was a problem sending your message.';
+                        document.querySelector(".form-loading").classList.remove("active");
+                    });
+            }
+        });
+    });
+    </script>
+
+<div id="podium-website-widget"><style>
+              .podium-mobile-widget-active {
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                position: fixed;
+              }
+
+              .podium-sr-only {
+                position: absolute;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                visibility: hidden;
+              }
+            </style><div><iframe id="podium-prompt" data-cy="podium-website-widget-iframe" title="podium webchat widget prompt" aria-label="podium webchat widget prompt" class="podium-iframe" scrolling="no" srcdoc="&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;main&quot; class=&quot;podium-frame-content&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" style="position: fixed; display: block; width: 340px; height: 216px; max-width: 340px; max-height: 216px; right: 0px; left: unset; bottom: 75px; top: unset; margin: 0px; padding: 0px; border: 0px; background-color: transparent; background-image: none; min-width: 0px; min-height: 0px; color-scheme: light; z-index: 2147482997;"></iframe></div><iframe id="podium-bubble" data-cy="podium-website-widget-iframe" title="podium webchat widget bubble" aria-label="podium webchat widget bubble" class="podium-iframe" scrolling="no" srcdoc="&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;main&quot; class=&quot;podium-frame-content&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" style="position: fixed; display: block; width: max-content; height: 100px; max-width: max-content; max-height: 100px; right: 0px; left: unset; bottom: 0px; top: unset; margin: 0px; padding: 0px; border: 0px; background-color: transparent; background-image: none; min-width: 0px; min-height: 0px; color-scheme: light; z-index: 2147482997;"></iframe><label class="podium-sr-only" for="g-recaptcha-response-100000">Google Recaptcha</label></div><div id="podium-google-recaptcha-v3-element" style="width: 0.1px; height: 0.1px; display: none;"></div><script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g+"?ref\x3dgtm2";d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","lpv7pdx2er");</script><script type="text/javascript" id="" charset="">window.dataLayer=window.dataLayer||[];window.addEventListener("message",function(a){a.data.event&&a.data.event.indexOf("calendly")===0&&(a=a.data.event.split("."),a=a[1],a!=="page_height"&&window.dataLayer.push({event:"calendly_"+a}))});</script><div id="batBeacon375812689974" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon7614796797" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=187095439&amp;tm=gtm002&amp;Ver=2&amp;mid=c84a4a8c-e754-48eb-9191-283ed9b12f6e&amp;bo=1&amp;sid=311d52a0610311f19e8f4fc24d25bf22&amp;vid=5839bca03cac11f1888caddc513100bf&amp;vids=0&amp;msclkid=N&amp;gtm_tag_source=1&amp;pi=918639831&amp;lg=en-US&amp;sw=1470&amp;sh=956&amp;sc=30&amp;tl=Walk-In%20GYN%20Care%20in%20Jackson%20Heights,%20Queens%20%7C%20Women's%20Health,%20Pap%20Smears%20%7C%20Nao%20Medical&amp;p=https%3A%2F%2Fnaomedical.com%2Fwomens-health%2Flocations%2Fjackson-heights.html&amp;r=https%3A%2F%2Fwww.google.com%2F&amp;lt=737&amp;evt=pageLoad&amp;sv=2&amp;cdb=AQAQ&amp;rn=919211" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon497703137849" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=187095439&amp;amp;tm=gtm002&amp;amp;Ver=2&amp;amp;mid=c84a4a8c-e754-48eb-9191-283ed9b12f6e&amp;amp;bo=2&amp;amp;sid=311d52a0610311f19e8f4fc24d25bf22&amp;amp;vid=5839bca03cac11f1888caddc513100bf&amp;amp;vids=0&amp;amp;msclkid=N&amp;amp;tpp=1&amp;amp;ea=phone_number_click&amp;amp;en=Y&amp;amp;p=https%3A%2F%2Fnaomedical.com%2Fwomens-health%2Flocations%2Fjackson-heights.html&amp;amp;sw=1470&amp;amp;sh=956&amp;amp;sc=30&amp;amp;evt=custom&amp;amp;cdb=AQAQ&amp;amp;rn=881122" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div></body><div id="codex-agent-overlay-root" data-codex-agent-overlay-root="true"></div></html>
